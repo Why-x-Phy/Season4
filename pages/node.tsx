@@ -118,10 +118,10 @@ const Home: NextPage = () => {
         <h1 className={styles.h1}>Buy a Genesis Edition NFT</h1>
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
         <p className={styles.explain}>
-          <b>GENESIS EDITION NFT</b> costs <b>25 Matic</b> and only <b>2 per Wallet</b> in a Season.
+          <b>GENESIS EDITION </b> costs <b>120 000 UR Token</b> and only <b>2 per Wallet</b> in a Season.
           <br />
           <br />
-          <b>Activate your node</b> to generate <b>Unreveal Token</b> with it.
+          <b>Stake your GENESIS EDITION</b> to earn <b>USDT</b> rewards with it.
         </p>
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
         <div className={styles.quantityContainer}>
@@ -159,7 +159,7 @@ const Home: NextPage = () => {
       </p>
 
       <p className={styles.staking}>
-        <h1 className={styles.h1}>Your Unreveal Node's</h1>
+        <h1 className={styles.h1}>Your Unreveal Genesis Edition</h1>
         <hr className={`${styles.divider} ${styles.spacerTop}`} />
         <>
           <h2>Your Tokens</h2>
@@ -209,7 +209,7 @@ const Home: NextPage = () => {
           </Web3Button>
 
           <hr className={`${styles.divider} ${styles.spacerTop}`} />
-          <h2>Your Active Node's</h2>
+          <h2>Your Staked Genesis Edition`s</h2>
 
           <Web3Button
             className={styles.wallet}
@@ -217,7 +217,7 @@ const Home: NextPage = () => {
             action={() => withdrawNfts(selectedNftsToWithdraw)}
             isDisabled={selectedNftsToWithdraw.length === 0}
           >
-            Deactivate Selected Node's
+            Unstake Selected Genesis Edition
           </Web3Button>
 
           <div className={styles.nftBoxGrid}>
@@ -247,7 +247,7 @@ const Home: NextPage = () => {
           </div>
 
           <hr className={`${styles.divider} ${styles.spacerTop}`} />
-          <h2>Your Deactivated Node's</h2>
+          <h2>Your Unstaked Genesis Edition`s</h2>
 
           <Web3Button
             className={styles.wallet}
@@ -255,7 +255,7 @@ const Home: NextPage = () => {
             action={() => stakeNfts(selectedNfts)}
             isDisabled={selectedNfts.length === 0}
           >
-            Activate Selected Node's
+            Stake Selected Genesis Edition`s`
           </Web3Button>
 
           <div className={styles.nftBoxGrid}>
