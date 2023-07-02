@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       {/* Top Section */}
-      <h1 className={styles.h1}>Welcome to the Unreveal Dashboard</h1>
+      <h1 className={styles.h1}></h1>
       <div className={styles.nftBoxGrid}>
         <div
           className={styles.optionSelectBox}
@@ -19,23 +19,23 @@ const Home: NextPage = () => {
         >
           {/* Mint a new NFT */}
           <Image src="/icons/edition.webp" alt="edition" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>Unreveal Node</h2>
+          <h2 className={styles.selectBoxTitle}>Genesis Edition</h2>
           <p className={styles.selectBoxDescription}>
-          Get a rare <b>Genesis Edition NFT</b> and operate a <b>Unreveal Node</b>{" "}
-          and generate <b>Unreveal Token</b> to buy herewith free NFT`s.
+          Get a rare <b>Genesis Edition</b> and <b>Stake</b> it{" "}
+          to earn <b>USDT</b> rewards.
           </p>
         </div>
 
         <div
           className={styles.optionSelectBox}
           role="button"
-          onClick={() => router.push(`/season1`)}
+          onClick={() => router.push(`/season3`)}
         >
           {/* Staking an NFT */}
-          <Image src="/icons/gorilla.webp" alt="gorilla" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>Season 1</h2>
+          <Image src="/icons/coming.webp" alt="gorilla" width={64} height={64} />
+          <h2 className={styles.selectBoxTitle}>Season 3</h2>
           <p className={styles.selectBoxDescription}>
-          Enter the unique world of <b>Angry Animals Part 1</b>.{" "}
+          Enter the unique world of <b>Nightwolf Platoon</b>.{" "}
           Mint and Stake your NFT`s to earn <b>Unreveal Tokens</b>.
           </p>
         </div>
@@ -57,13 +57,13 @@ const Home: NextPage = () => {
         <div
           className={styles.optionSelectBox}
           role="button"
-          onClick={() => router.push(`/`)}
+          onClick={() => router.push(`/season1`)}
         >
           {/* Staking an NFT */}
-          <Image src="/icons/coming.webp" alt="coming" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>Season 3</h2>
+          <Image src="/icons/gorilla.webp" alt="coming" width={64} height={64} />
+          <h2 className={styles.selectBoxTitle}>Season 1</h2>
           <p className={styles.selectBoxDescription}>
-          Enter the unique world of <b>Coming Soon</b>.{" "}
+          Enter the unique world of <b>Angry Animals Part 1</b>.{" "}
           Mint and Stake your NFT`s to earn <b>Unreveal Tokens</b>.
           </p>
         </div>

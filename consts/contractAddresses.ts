@@ -1,9 +1,11 @@
 export const tokenContractAddress =
   "0xd46E4Df230ce52C5C0D7aEe0E0D960FD4367bD57";
+export const tokenContractAddress1 =
+  "0xc2132D05D31c914a87C6611C10748AEb04B58e8F";
 export const nftDropNode =
   "0xC8E4AfC08051D7F3D63BEdA0D03Aa9fac3299bC2";
 export const stakingNode =
-  "0xae010a32F3Dd0a3057De16E3B56f78896Dd6abB0";
+  "0xa2773843ba415Dfcb338875198cF7564FC68A6f5";
 export const nftDropSeason1 =
   "0x1036Dd30465D1D8f2FB0D6F4786a6cd4eD69D493";
 export const stakingSeason1 =

@@ -15,11 +15,12 @@ import {
   Web3Button,
 } from "@thirdweb-dev/react";
 import { BigNumber, ethers } from "ethers";
-import NFTCard from "../components/NFTCardSeason3";
+import NFTCard from "../components/NFTCardNode";
 import {
-  nftDropSeason3,
-  stakingSeason3,
+  nftDropNode,
+  stakingNode,
   tokenContractAddress,
+  tokenContractAddress1,
 } from "../consts/contractAddresses";
 
 
@@ -29,16 +30,22 @@ const Home: NextPage = () => {
 
     const address = useAddress();
     const { contract: nftDropContract } = useContract(
-      nftDropSeason3,
+      nftDropNode,
       "nft-drop"
     );
     const { contract: tokenContract } = useContract(
       tokenContractAddress,
       "token"
     );
-    const { contract, isLoading } = useContract(stakingSeason3);
+    const { contract: tokenContract1 } = useContract(
+      tokenContractAddress1,
+      "token"
+    );
+    
+    const { contract, isLoading } = useContract(stakingNode);
     const { data: ownedNfts } = useOwnedNFTs(nftDropContract, address);
     const { data: tokenBalance } = useTokenBalance(tokenContract, address);
+    const { data: tokenBalance1 } = useTokenBalance(tokenContract1, address);
     const [claimableRewards, setClaimableRewards] = useState<BigNumber>();
     const { data: stakedTokens } = useContractRead(contract, "getStakeInfo", [
       address,
@@ -63,10 +70,10 @@ const Home: NextPage = () => {
 
     const isApproved = await nftDropContract?.isApproved(
       address,
-      stakingSeason3
+      stakingNode
     );
     if (!isApproved) {
-      await nftDropContract?.setApprovalForAll(stakingSeason3, true);
+      await nftDropContract?.setApprovalForAll(stakingNode, true);
     }
     await contract?.call("stake", [ids]);
     setSelectedNfts([]);  // clear the selected NFTs after staking
@@ -90,14 +97,16 @@ if (isLoading) {
 
     return (
       <div className={styles.container}>
-          <div
+        <div
           className={styles.optionSelectBack}
           role="button"
           onClick={() => router.push(`/`)}
         >
           {/* Mint a new NFT */}
+
           <h2 className={styles.selectBoxTitleBack}>Back to Dashboard</h2>
         </div>
+
         <p className={styles.minting}> 
 
 
@@ -108,21 +117,18 @@ if (isLoading) {
        
         
         
-        <h1 className={styles.h1}>Mint Nightwolf Platoon NFTs</h1>
+        <h1 className={styles.h1}>Buy a Genesis Edition NFT</h1>
   
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
         <p className={styles.explain}>
-        <b>Phase 1 Unreveal Mint</b> costs 1 NFT <b>5 Matic</b> and goes until August 31th.
+        <b>GENESIS EDITION NFT</b> costs <b>25 Matic</b> and only <b>2 per Wallet</b> in a Season.
          <br /><br /> 
-         <b>Phase 2 Reveal Mint</b> costs 1 NFT <b>10 Matic</b> and runs until September 30th.
+         <b>Activate your node</b> to generate <b>Unreveal Token</b> with it.
         </p>
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
-  
-        
-  
-        <div className={styles.quantityContainer}>
+          <div className={styles.quantityContainer}>
                       <button
                         className={`${styles.quantityControlButton}`}
                         onClick={() => setQuantity(quantity - 1)}
@@ -136,6 +142,9 @@ if (isLoading) {
                       <button
                         className={`${styles.quantityControlButton}`}
                         onClick={() => setQuantity(quantity + 1)}
+                        disabled={quantity >= 2}
+
+                        
                         
                       >
                         +
@@ -146,7 +155,7 @@ if (isLoading) {
   
         <Web3Button
           className={styles.wallet}
-          contractAddress={nftDropSeason3}
+          contractAddress={nftDropNode}
           action={(contract) => contract.erc721.claim(quantity)}
           onSuccess={() => {
             setQuantity(1);
@@ -156,13 +165,13 @@ if (isLoading) {
             
           }}
         >
-          Mint An NFT
+          Buy a Node
         </Web3Button>
         <br /><br /> 
         </p>
 
         <p className={styles.staking}> 
-        <h1 className={styles.h1}>Stake Your NFTs</h1>
+        <h1 className={styles.h1}>Your Unreveal Node`s</h1>
         <hr className={`${styles.divider} ${styles.spacerTop}`} />
   
 
@@ -176,15 +185,32 @@ if (isLoading) {
                   <b>
                     {!claimableRewards
                       ? "Loading..."
-                      : Number(ethers.utils.formatUnits(claimableRewards, 18)).toFixed(2)} 
+                      : Number(ethers.utils.formatUnits(claimableRewards, 18)).toFixed(2)}
                   </b>{" "}
                   {tokenBalance?.symbol}
                 </p>
               </div>
               <div className={styles.tokenItem}>
+                <h3 className={styles.tokenLabel}>Claimable Rewards</h3>
+                <p className={styles.tokenValue}>
+                  <b>
+                    {!claimableRewards
+                      ? "Loading..."
+                      : Number(ethers.utils.formatUnits(claimableRewards, 18)).toFixed(2)}
+                  </b>{" "}
+                  {tokenBalance1?.symbol}
+                </p>
+              </div>
+              <div className={styles.tokenItem}>
                 <h3 className={styles.tokenLabel}>Current Balance</h3>
                 <p className={styles.tokenValue}>
-                <b>{tokenBalance?.displayValue !== undefined ? parseFloat(tokenBalance.displayValue).toFixed(2) : ""}</b> {tokenBalance?.symbol}
+                  <b>{tokenBalance?.displayValue !== undefined ? parseFloat(tokenBalance.displayValue).toFixed(2) : ""}</b> {tokenBalance?.symbol}
+                </p>
+              </div>
+              <div className={styles.tokenItem}>
+                <h3 className={styles.tokenLabel}>Current Balance</h3>
+                <p className={styles.tokenValue}>
+                  <b>{tokenBalance1?.displayValue !== undefined ? parseFloat(tokenBalance1.displayValue).toFixed(2) : ""}</b> {tokenBalance1?.symbol}
                 </p>
               </div>
             </div>
@@ -192,28 +218,28 @@ if (isLoading) {
             <Web3Button
               className={styles.wallet}
               action={(contract) => contract.call("claimRewards")}
-              contractAddress={stakingSeason3}
+              contractAddress={stakingNode}
             >
               Claim Rewards
             </Web3Button>
   
             <hr className={`${styles.divider} ${styles.spacerTop}`} />
-          <h2>Your Staked NFTs</h2>
+          <h2>Your Active Node`s</h2>
 
           <Web3Button
         className={styles.wallet}
-        contractAddress={stakingSeason3}
+        contractAddress={stakingNode}
         action={() => withdrawNfts(selectedNftsToWithdraw)}
         isDisabled={selectedNftsToWithdraw.length === 0}
       >
-        Unstake Selected NFTs
+        Deactivate Selected Node`s
       </Web3Button>
 
           <div className={styles.nftBoxGrid}>
             {stakedTokens &&
               stakedTokens[0]?.map((stakedToken: BigNumber) => (
                 <div
-                  className={`${styles.nftBox} ${
+                  className={`${styles.nftBoxNode} ${
                     selectedNftsToWithdraw.includes(stakedToken.toString())
                       ? styles.selected
                       : ""
@@ -238,21 +264,21 @@ if (isLoading) {
 
 
           <hr className={`${styles.divider} ${styles.spacerTop}`} />
-          <h2>Your Unstaked NFTs</h2>
+          <h2>Your Deactivated Node`s</h2>
 
           <Web3Button
             className={styles.wallet}
-            contractAddress={stakingSeason3}
+            contractAddress={stakingNode}
             action={() => stakeNfts(selectedNfts)}
             isDisabled={selectedNfts.length === 0}
             >
-            Stake Selected NFTs
+            Activate Selected Node`s
           </Web3Button>
 
           <div className={styles.nftBoxGrid}>
             {ownedNfts?.map((nft) => (
               <div
-                className={`${styles.nftBox} ${
+                className={`${styles.nftBoxNode} ${
                   selectedNfts.includes(nft.metadata.id) ? styles.selected : ""
                 }`}
                 key={nft.metadata.id.toString()}
