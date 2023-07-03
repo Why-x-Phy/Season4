@@ -75,8 +75,9 @@
 .h1 {
   font-family:Arial, Helvetica, sans-serif;
   font-size: 3rem;
+  font-family: bold;
   margin-bottom: 0px;
-  color:#3C1B32;
+  color:#C27dFF;
   text-shadow: rgb(49, 49, 49) 0.05em 0.05em 0.05em;
 }
 
@@ -87,6 +88,7 @@
   margin-bottom: 30px;
   font-size: 1.125rem;
   max-width: 1200px;
+  color: #f3f0f3;
 }
 
 .divider {
@@ -181,6 +183,12 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
+}
+
+.nftBoxNode h3 {
+  font-family: bold;
+  color: #f3f0f0;
+  text-shadow: 0.1em 0.1em 0.2em #55043e;
 }
 
 .nftBoxNode video {
