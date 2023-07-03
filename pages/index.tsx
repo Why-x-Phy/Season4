@@ -22,7 +22,7 @@ const Home: NextPage = () => {
           <h2 className={styles.selectBoxTitle}>Genesis Edition</h2>
           <p className={styles.selectBoxDescription}>
           Get a rare <b>Genesis Edition</b> and <b>Stake</b> it{" "}
-          to earn <b>USDT</b> rewards.
+          to earn <b>USDT</b> rewards. Only available with <b>Unreveal Token</b>.
           </p>
         </div>
 
