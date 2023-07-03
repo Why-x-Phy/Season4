@@ -27,7 +27,8 @@
 }
 
 .minting {
-  background: rgba(217, 183, 245, 0.1);
+  /*background: rgba(217, 183, 245, 0.1);*/
+  background: rgba(217, 183, 245, 0);
   width: 100%;
   border-radius: 16px;
   display: flex;
@@ -64,7 +65,7 @@
 }
 
 .staking {
-  background: rgba(217, 183, 245, 0.1);
+  background: rgba(217, 183, 245, 0);
   width: 100%;
   border-radius: 16px;
   display: flex;
