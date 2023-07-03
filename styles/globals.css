@@ -47,6 +47,11 @@ h2 {
   text-shadow: rgb(49, 49, 49) 0.05em 0.05em 0.05em;
 }
 
+h4 {
+  color: #C27dFF;
+  text-shadow: rgb(49, 49, 49) 0.05em 0.05em 0.05em;
+}
+
 .tw-connected-wallet {
   background: #3C1B32 !important; 
  }
