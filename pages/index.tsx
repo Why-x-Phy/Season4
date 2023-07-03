@@ -2,10 +2,16 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
+import { useContract } from "@thirdweb-dev/react";
+import { stakingNode } from "../consts/contractAddresses";
 
 const Home: NextPage = () => {
   const router = useRouter();
-
+  const { contract, isLoading } = useContract(stakingNode);
+  
+  if (isLoading) {
+    return <div className={styles.loading}></div>;
+  }
 
   return (
     <div className={styles.container}>
