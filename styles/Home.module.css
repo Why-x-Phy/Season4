@@ -43,7 +43,11 @@
 .wallet {
   color:#f3f0f3 !important;
   /*background: #3C1B32 !important;*/
-  background:#0b102c !important;
+  /*background:#0b102c !important; */
+  background-image: url('https://bafybeib2zzqa2iwziopb7d7waj2rc6dnv5nnjpeq2sumwjywdo3b3lueom.ipfs-public.thirdwebcdn.com/Background_new.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% 0 !important;
+  background-size: cover!important;
 }
 
 .modal {
