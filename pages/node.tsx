@@ -124,6 +124,12 @@ const Home: NextPage = () => {
           <b>Stake your GENESIS EDITION</b> to earn <b>USDT</b> rewards with it.
         </p>
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
+        <div className={styles.tokenItem}>
+              <h3 className={styles.tokenLabel}>Current UR Balance</h3>
+              <p className={styles.tokenValue}>
+                <b>{tokenBalance?.displayValue !== undefined ? parseFloat(tokenBalance.displayValue).toFixed(2) : ""}</b> {tokenBalance?.symbol}
+              </p>
+            </div>
         <div className={styles.quantityContainer}>
           <button
             className={`${styles.quantityControlButton}`}
@@ -152,7 +158,7 @@ const Home: NextPage = () => {
             // Handle error
           }}
         >
-          Buy a Node
+          Buy Genesis Edition
         </Web3Button>
         <br />
         <br />
@@ -164,19 +170,9 @@ const Home: NextPage = () => {
         <>
           <h2>Your Tokens</h2>
           <div className={styles.tokenGrid}>
+            
             <div className={styles.tokenItem}>
-              <h3 className={styles.tokenLabel}>Claimable Rewards</h3>
-              <p className={styles.tokenValue}>
-                <b>
-                  {!claimableRewards
-                    ? "Loading..."
-                    : Number(ethers.utils.formatUnits(claimableRewards, 18)).toFixed(2)}
-                </b>{" "}
-                {tokenBalance?.symbol}
-              </p>
-            </div>
-            <div className={styles.tokenItem}>
-              <h3 className={styles.tokenLabel}>Claimable Rewards</h3>
+              <h3 className={styles.tokenLabel}>Claimable USDT Rewards</h3>
               <p className={styles.tokenValue}>
                 <b>
                   {!claimableRewards
@@ -186,14 +182,9 @@ const Home: NextPage = () => {
                 {tokenBalance1?.symbol}
               </p>
             </div>
+            
             <div className={styles.tokenItem}>
-              <h3 className={styles.tokenLabel}>Current Balance</h3>
-              <p className={styles.tokenValue}>
-                <b>{tokenBalance?.displayValue !== undefined ? parseFloat(tokenBalance.displayValue).toFixed(2) : ""}</b> {tokenBalance?.symbol}
-              </p>
-            </div>
-            <div className={styles.tokenItem}>
-              <h3 className={styles.tokenLabel}>Current Balance</h3>
+              <h3 className={styles.tokenLabel}>Current USDT Balance</h3>
               <p className={styles.tokenValue}>
                 <b>{tokenBalance1?.displayValue !== undefined ? parseFloat(tokenBalance1.displayValue).toFixed(2) : ""}</b> {tokenBalance1?.symbol}
               </p>
@@ -217,7 +208,7 @@ const Home: NextPage = () => {
             action={() => withdrawNfts(selectedNftsToWithdraw)}
             isDisabled={selectedNftsToWithdraw.length === 0}
           >
-            Unstake Selected Genesis Edition
+            Unstake Selected
           </Web3Button>
 
           <div className={styles.nftBoxGrid}>
@@ -255,7 +246,7 @@ const Home: NextPage = () => {
             action={() => stakeNfts(selectedNfts)}
             isDisabled={selectedNfts.length === 0}
           >
-            Stake Selected Genesis Edition`s`
+            Stake Selected
           </Web3Button>
 
           <div className={styles.nftBoxGrid}>
