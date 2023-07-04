@@ -21,7 +21,7 @@
   position: absolute;
   padding: 5px 24px;
   background: 
-        url("https://ipfs.thirdwebcdn.com/ipfs/QmckqJD8PqdNG24uXxDyWA7DPHx6p68dotpcGNWqjSJGqn/Spinner-1s-200px%20(1).svg") top
+        url("https://bafybeigwgwdtymtd7ot2sn2zb26hsthvhgwzawfb4otwon47svfoh4blee.ipfs-public.thirdwebcdn.com/Spinner-1s-200px%20(1).svg") top
         no-repeat;
 
 }
@@ -467,4 +467,3 @@
   justify-content: center;
   gap: 10%;
 }
-
