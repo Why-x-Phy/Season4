@@ -115,7 +115,7 @@ const Home: NextPage = () => {
         <br />
         <br />
         <ConnectWallet btnTitle="Connect Wallet" className={styles.wallet} />
-        <h1 className={styles.h1}>Buy a Genesis Edition NFT</h1>
+        <h1 className={styles.h1}>Buy a Genesis Edition</h1>
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
         <p className={styles.explain}>
           <b>GENESIS EDITION </b> costs <b>120 000 UR Token</b> and only <b>2 per Wallet</b> in a Season.
@@ -165,7 +165,7 @@ const Home: NextPage = () => {
       </p>
 
       <p className={styles.staking}>
-        <h1 className={styles.h1}>Your Unreveal Genesis Edition</h1>
+        <h1 className={styles.h1}>Your Genesis Edition</h1>
         <hr className={`${styles.divider} ${styles.spacerTop}`} />
         <>
           <h2>Your Tokens</h2>
