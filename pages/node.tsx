@@ -217,7 +217,7 @@ const Home: NextPage = () => {
                 <div
                   className={`${styles.nftBoxNode} ${
                     selectedNftsToWithdraw.includes(stakedToken.toString())
-                      ? styles.selected
+                      ? styles.selectedNode
                       : ""
                   }`}
                   key={stakedToken.toString()}
@@ -253,7 +253,7 @@ const Home: NextPage = () => {
             {ownedNfts?.map((nft) => (
               <div
                 className={`${styles.nftBoxNode} ${
-                  selectedNfts.includes(nft.metadata.id) ? styles.selected : ""
+                  selectedNfts.includes(nft.metadata.id) ? styles.selectedNode : ""
                 }`}
                 key={nft.metadata.id.toString()}
                 onClick={() => {

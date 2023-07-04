@@ -46,7 +46,7 @@
   /*background: #3C1B32 !important;*/
   /*background:#0b102c !important; */
   /*background-image: url('https://bafybeib2zzqa2iwziopb7d7waj2rc6dnv5nnjpeq2sumwjywdo3b3lueom.ipfs-public.thirdwebcdn.com/Background_new.png') !important;*/
-  background-image: url('https://bafybeiefaba4uohcguaelmdwcxcfvlqhobeeseijt7bswi5o5mxpi4uwum.ipfs-public.thirdwebcdn.com/No.png') !important;
+  background-image: url('https://bafybeidjzfk4h6w6koap6hvblj7ny4l7plbp7eqw4v7m2bqf3ezebrnfbu.ipfs-public.thirdwebcdn.com/Wallet_Background2.png') !important;
   background-repeat: no-repeat !important;
   background-position: 50% 0 !important;
   background-size: cover !important;
@@ -161,6 +161,7 @@
   transition: 0.7s;
 }
 
+
 .nftBox h3 {
   height: 20px;
   max-width: 150px;
@@ -203,6 +204,8 @@
   text-shadow: 0.1em 0.1em 0.2em #55043e;
 }
 
+
+
 .nftBoxNode video {
   height: 20px;
   display: flex;
@@ -224,8 +227,19 @@
 .selected {
   transform: scale(1.1);
   border: 1px solid #ffdbf5;
-  box-shadow: 0 0 10px #ffdbf5, 0 0 20px #8008b7;
+  box-shadow: 0 0 10px #ffdbf5, 0 0 20px #320347;
   animation: glowing-border 1.5s infinite;
+}
+
+.selectedNode {
+  transform: scale(1.1);
+  border: 1px solid #ffdbf5;
+  box-shadow: 0 0 10px #ffdbf5, 0 0 20px #320347;
+  animation: glowing-border 1.5s infinite;
+  background-image: url('https://bafybeicmona4zqs4oj65j3lsralwl4amtwuw47vuirxbq52xajdyxqqzne.ipfs-public.thirdwebcdn.com/light.png') ;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
 }
 
 .selected .nftMedia {
