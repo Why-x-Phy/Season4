@@ -18,18 +18,21 @@ const Home: NextPage = () => {
       {/* Top Section */}
       <h1 className={styles.h1}></h1>
       <div className={styles.nftBoxGrid}>
+        
         <div
-          className={styles.optionSelectBox}
+          className={styles.optionSelectBox1}
           role="button"
           onClick={() => router.push(`/node`)}
         >
-          {/* Mint a new NFT */}
-          <Image src="/icons/edition.webp" alt="edition" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>Genesis Edition</h2>
+         <div className={styles.boxleft}><Image src="/icons/edition.webp" alt="edition" width={64} height={64} /></div>
+         <div className={styles.boxright}><h2 className={styles.selectBoxTitle}>Genesis Edition</h2>
           <p className={styles.selectBoxDescription}>
           Get a rare <b>Genesis Edition</b> and <b>Stake</b> it{" "}
           to earn <b>USDT</b> rewards. Only available with <b>Unreveal Token</b>.
-          </p>
+          </p></div>
+          {/* Mint a new NFT */}
+          
+          
         </div>
 
         <div

@@ -105,13 +105,13 @@
   max-width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   justify-content: center;
   gap: 1%;
   margin-top: 15px;
   margin-bottom: 15px;
-  flex-wrap: wrap;
 }
 
 .nftBox {
@@ -259,22 +259,73 @@
   transform: scale(1.05);
 }
 
+.optionSelectBox1 {
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  width: 100%;
+  min-height: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /*padding-left: 12px;
+  padding-right: 12px; */
+  cursor: pointer;
+  margin-bottom: 50px;
+  border: 1px solid rgba(46, 44, 44, 0.4);
+  box-shadow: 0 0 18px 0 #82919b; 
+  flex-wrap: wrap;
+}
+
 .optionSelectBox {
   border-radius: 16px;
   border: 1px solid #ccc;
-  width: 80%;
+  width: 100%;
   min-height: 200px;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 12px;
-  padding-right: 12px;
   cursor: pointer;
   margin-bottom: 50px;
   border: 1px solid rgba(46, 44, 44, 0.4);
   box-shadow: 0 0 18px 0 #82919b; 
+  flex-wrap: wrap;
+}
+
+.boxleft{
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border: 1px solid #ccc;
+  width: 40%;
+  min-height: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  border: 1px solid rgba(46, 44, 44, 0.4);
+   
+}
+
+.boxright {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border: 1px solid #ccc;
+  width: 60%;
+  min-height: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid rgba(46, 44, 44, 0.4);
+  
 }
 
 .optionSelectBox:hover {
