@@ -299,14 +299,14 @@
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
   border: 1px solid #ccc;
-  width: 40%;
+  width: 35%;
   min-height: 200px;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  box-shadow: 0 0 18px 0 #82919b;
   cursor: pointer;
   border: 1px solid rgba(46, 44, 44, 0.4);
    
@@ -316,19 +316,26 @@
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
   border: 1px solid #ccc;
-  width: 60%;
+  width: 65%;
   min-height: 200px;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 18px 0 #82919b;
   cursor: pointer;
   border: 1px solid rgba(46, 44, 44, 0.4);
   
 }
 
 .optionSelectBox:hover {
+  background: linear-gradient(158deg, rgba(112,191,238,0.3) 27%, rgba(255,219,245,0.3) 71%);
+  transition: 0.7s;
+  transform: scale(1.02);
+}
+
+.optionSelectBox1:hover {
   background: linear-gradient(158deg, rgba(112,191,238,0.3) 27%, rgba(255,219,245,0.3) 71%);
   transition: 0.7s;
   transform: scale(1.02);
@@ -367,6 +374,8 @@
   font-size: 1.2rem;
   color: rgba(160, 157, 157, 0.9);
   margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-family: bold;
 }
 
