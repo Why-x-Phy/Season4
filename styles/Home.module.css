@@ -309,6 +309,10 @@
   box-shadow: 0 0 18px 0 #82919b;
   cursor: pointer;
   border: 1px solid rgba(46, 44, 44, 0.4);
+  background-image: url('https://bafybeicmona4zqs4oj65j3lsralwl4amtwuw47vuirxbq52xajdyxqqzne.ipfs-public.thirdwebcdn.com/dark.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
    
 }
 
@@ -336,7 +340,10 @@
 }
 
 .optionSelectBox1:hover {
-  background: linear-gradient(158deg, rgba(112,191,238,0.3) 27%, rgba(255,219,245,0.3) 71%);
+  background-image: url('https://bafybeicmona4zqs4oj65j3lsralwl4amtwuw47vuirxbq52xajdyxqqzne.ipfs-public.thirdwebcdn.com/dark.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
   transition: 0.7s;
   transform: scale(1.02);
 }

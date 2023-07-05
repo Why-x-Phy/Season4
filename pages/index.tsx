@@ -24,7 +24,7 @@ const Home: NextPage = () => {
           role="button"
           onClick={() => router.push(`/node`)}
         >
-         <div className={styles.boxleft}><Image src="/icons/edition.webp" alt="edition" width={64} height={64} /></div>
+         <div className={styles.boxleft}><Image src="/icons/edition2.webp" alt="edition" width={240} height={151} /></div>
          <div className={styles.boxright}><h2 className={styles.selectBoxTitle}>Genesis Edition</h2>
           <p className={styles.selectBoxDescription}>
           Get a rare <b>Genesis Edition</b> and <b>Stake</b> it{" "}
