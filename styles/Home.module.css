@@ -52,18 +52,6 @@
   background-size: cover !important;
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%); /* IE 9 */
-  -webkit-transform: translate(-50%, -50%); /* Safari iOS */
-  transform: translate(-50%, -50%); /* Rest of browsers */
-
-  background-color: black;
-  width: 100px;
-  height: 100px;
-}
 
 .staking {
   background: rgba(217, 183, 245, 0);
@@ -274,7 +262,7 @@
 .optionSelectBox {
   border-radius: 16px;
   border: 1px solid #ccc;
-  width: 48%;
+  width: 80%;
   min-height: 200px;
   height: 100%;
   display: flex;
@@ -313,7 +301,7 @@
   margin-top: 1px;
   margin-bottom: 8px;
   color:#ffffff;
-  font-family: bold ;
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 .selectBoxTitleBack {
