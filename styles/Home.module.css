@@ -229,6 +229,8 @@
   transform: scale(1.1);
 }
 
+/*  ################# INDEX  #################  */
+
 .optionSelectBack {
   border-radius: 16px;
   border: 1px solid #ccc;
@@ -252,23 +254,6 @@
   background: linear-gradient(158deg, rgba(112,191,238,0.3) 27%, rgba(255,219,245,0.3) 71%);
   transition: 0.7s;
   transform: scale(1.05);
-}
-
-.optionSelectBox {
-  border-radius: 16px;
-  border: 1px solid #ccc;
-  width: 100%;
-  min-height: 200px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  margin-bottom: 50px;
-  border: 1px solid rgba(46, 44, 44, 0.4);
-  box-shadow: 0 0 18px 0 #82919b; 
-  flex-wrap: wrap;
 }
 
 .placeholder {
@@ -297,15 +282,13 @@
   background-size: cover;
 }
 
-.boxleftgenesis{
-}
-
 .optionSelectBoxSeason3 {
   border-radius: 16px;
   border: 1px solid #ccc;
   width: 1400px;
   min-height: 500px;
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -323,18 +306,13 @@
   background-size: cover;
 }
 
-.boxrightseason3 {
-  width: 45%;
-  flex-direction: column;
-  align-items: right;
-}
-
 .optionSelectBoxSeason2 {
   border-radius: 16px;
   border: 1px solid #ccc;
   width: 1400px;
   min-height: 500px;
   height: 100%;
+  width: 100%;
   line-height: 100%;
   display: flex;
   flex-direction: row;
@@ -351,18 +329,13 @@
   background-size: cover;
 }
 
-.boxleftseason2 {
-  width: 45%;
-  flex-direction: column;
-  align-items: left;
-}
-
 .optionSelectBoxSeason1 {
   border-radius: 16px;
   border: 1px solid #ccc;
   width: 1400px;
   min-height: 500px;
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -378,11 +351,7 @@
   background-size: cover;
 }
 
-.boxrightseason1 {
-  width: 45%;
-  flex-direction: column;
-  align-items: right;
-}
+/*  #################hover  */
 
 .optionSelectBox:hover {
   background: linear-gradient(158deg, rgba(112,191,238,0.3) 27%, rgba(255,219,245,0.3) 71%);
@@ -424,15 +393,6 @@
   }
 }*/
 
-.selectBoxTitle {
-  font-size: 3rem;
-  margin-top: 1px;
-  margin-bottom: 8px;
-  margin-right: 50px;
-  color:#ffffff;
-  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
-  text-align: right;
-}
 
 .selectBoxTitleBack {
   font-size: 1.5rem;
@@ -557,7 +517,7 @@
     justify-content: center;
   }
 
-  .selectBoxDescription {
+  .selectBoxDescriptionright {
     font-size: 1rem;
     text-align: center;
     margin-left: 0px;
