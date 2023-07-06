@@ -280,13 +280,13 @@
 .optionSelectBoxGenesis {
   border-radius: 16px;
   border: 1px solid #ccc;
-  width: 2000px;
-  min-height: 600px;
+  width: 1400px;
+  min-height: 500px;
   height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
   /*padding-left: 12px;
   padding-right: 12px; */
   cursor: pointer;
@@ -294,7 +294,7 @@
   border: 1px solid rgba(46, 44, 44, 0.4);
   box-shadow: 0 0 18px 0 #82919b; 
   flex-wrap: wrap;
-  background-image: url('https://bafybeic7mmcgkwgeqlclao22zrbrltspcyelpiuwt4mwrvky2m2gdmzmwq.ipfs.thirdwebstorage.com/season3clean.png');
+  background-image: url('https://bafybeie5mbi3gndc3epfmxrku36xccukxwwrotah4ovl7t32llwrxuyxca.ipfs.thirdwebstorage.com/New.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -303,8 +303,8 @@
 .optionSelectBoxSeason3 {
   border-radius: 16px;
   border: 1px solid #ccc;
-  width: 2000px;
-  min-height: 600px;
+  width: 1400px;
+  min-height: 500px;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -393,17 +393,6 @@
   text-align: right;
 }
 
-.selectBoxTitleGenesis {
-  font-size: 5rem;
-  margin-top: 1px;
-  margin-bottom: 8px;
-  margin-right: 50px;
-  color:#ffffff;
-  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
-  text-align: right;
-  text-shadow: 0.1em 0.1em 0.2em #ffffff;
-}
-
 .selectBoxTitleBack {
   font-size: 1.5rem;
   margin-top: 5px;
@@ -412,13 +401,27 @@
   font-family: bold;
 }
 
+.selectBoxTitleGenesis {
+  font-size: 5rem;
+  margin-top: 1px;
+  margin-bottom: 8px;
+  margin-right: 100px;
+  line-height: 100%;
+  color:#ffffff;
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  text-align: right;
+  text-shadow: 0.1em 0.1em 0.2em #ffffff;
+}
+
 .selectBoxDescription {
   font-size: 1.2rem;
   color: rgba(160, 157, 157, 0.9);
   margin-top: 0px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-right: 100px;
   font-family: bold;
+  text-align: right;
 }
 
 /* Between 1200 and 800 */
