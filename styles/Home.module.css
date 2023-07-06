@@ -455,6 +455,26 @@
   transform: scale(1.02);
 }
 
+.optionSelectBoxGenesis:hover {
+  transition: 0.7s;
+  transform: scale(1.02);
+}
+
+.optionSelectBoxSeason3:hover {
+  transition: 0.7s;
+  transform: scale(1.02);
+}
+
+.optionSelectBoxSeason2:hover {
+  transition: 0.7s;
+  transform: scale(1.02);
+}
+
+.optionSelectBoxSeason1:hover {
+  transition: 0.7s;
+  transform: scale(1.02);
+}
+
 .optionSelectBox1:hover {
   background-image: url('https://bafybeicmona4zqs4oj65j3lsralwl4amtwuw47vuirxbq52xajdyxqqzne.ipfs-public.thirdwebcdn.com/dark.png');
   background-repeat: no-repeat;
