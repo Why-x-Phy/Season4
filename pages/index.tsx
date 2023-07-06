@@ -20,12 +20,12 @@ const Home: NextPage = () => {
       <div className={styles.nftBoxGrid}>
         
         <div
-          className={styles.optionSelectBox1}
+          className={styles.optionSelectBoxGenesis}
           role="button"
           onClick={() => router.push(`/node`)}
         >
-         <div className={styles.boxleft}><Image src="/icons/edition2.webp" alt="edition" width={240} height={151} /></div>
-         <div className={styles.boxright}><h2 className={styles.selectBoxTitle}>Genesis Edition</h2>
+         <div className={styles.boxleftgenesis}></div>
+         <div className={styles.boxrightgenesis}><h2 className={styles.selectBoxTitleGenesis}>Genesis Edition</h2>
           <p className={styles.selectBoxDescription}>
           Get a rare <b>Genesis Edition</b> and <b>Stake</b> it{" "}
           to earn <b>USDT</b> rewards. Only available with <b>Unreveal Token</b>.
@@ -36,16 +36,14 @@ const Home: NextPage = () => {
         </div>
 
         <div
-          className={styles.optionSelectBox}
+          className={styles.optionSelectBoxSeason3}
           role="button"
           onClick={() => router.push(`/season3`)}
         >
           {/* Staking an NFT */}
-          <Image src="/icons/coming.webp" alt="gorilla" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>Season 3</h2>
+          
+          <h2 className={styles.selectBoxTitle}></h2>
           <p className={styles.selectBoxDescription}>
-          Enter the unique world of <b>Nightwolf Platoon</b>.{" "}
-          Mint and Stake your NFT`s to earn <b>Unreveal Tokens</b>.
           </p>
         </div>
 
