@@ -25,10 +25,13 @@ const Home: NextPage = () => {
           onClick={() => router.push(`/node`)}
         >
          
-         <div className={styles.boxleftgenesis}><h2 className={styles.selectBoxTitleSeason2}>GENESIS EDITION</h2>
+         <div className={styles.placeholder}><h2 className={styles.selectBoxTitleSeason2}>
+         <p>GENESIS</p>
+         EDITION
+          </h2>
           <p className={styles.selectBoxDescriptionGenesis}>
-          Get a rare <b>Genesis Edition</b> and <b>Stake</b> it{" "}
-          to earn <b>USDT</b> rewards. Only available with <b>Unreveal Token</b>.
+          <p>Get a rare <b>Genesis Edition</b> and <b>Stake</b> it to earn <b>USDT</b> rewards.</p>
+          Only available with <b>Unreveal Token</b>.
           </p></div>
           {/* Mint a new NFT */}
           
@@ -42,8 +45,11 @@ const Home: NextPage = () => {
         >
           {/* Staking an NFT */}
           
-          <div className={styles.boxrightseason3}><h2 className={styles.selectBoxTitleGenesis}>NIGHTWOLF PLATOON</h2>
-          <p className={styles.selectBoxDescription}>
+          <div className={styles.placeholder}><h2 className={styles.selectBoxTitleGenesis}>
+          <p>NIGHTWOLF</p>
+            PLATOON
+            </h2>
+          <p className={styles.selectBoxDescriptionright}>
           <b>Season 3</b>
           </p></div>
         </div>
@@ -55,7 +61,10 @@ const Home: NextPage = () => {
         >
           {/* Mint a new NFT 
           <Image src="/icons/lion.webp" alt="lion" width={64} height={64} /> */}
-          <div className={styles.boxleftseason2}><h2 className={styles.selectBoxTitleSeason2}>ANGRY ANIMALS</h2>
+          <div className={styles.placeholder}><h2 className={styles.selectBoxTitleSeason2}>
+          <p>ANGRY</p>
+            ANIMALS
+            </h2>
           <p className={styles.selectBoxDescriptionleft}>
           <b>Season 2</b>
           </p></div>
@@ -68,8 +77,11 @@ const Home: NextPage = () => {
         >
           {/* Staking an NFT 
           <Image src="/icons/gorilla.webp" alt="coming" width={64} height={64} />*/}
-          <div className={styles.boxrightseason1}><h2 className={styles.selectBoxTitleGenesis}>ANGRY ANIMALS</h2>
-          <p className={styles.selectBoxDescription}>
+          <div className={styles.placeholder}><h2 className={styles.selectBoxTitleGenesis}>
+          <p>ANGRY</p>
+            ANIMALS
+            </h2>
+          <p className={styles.selectBoxDescriptionright}>
           <b>Season 1</b>
           </p></div>
         </div>

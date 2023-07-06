@@ -141,7 +141,6 @@
 }
 
 .nftBoxNode:hover {
-  /*background: linear-gradient(158deg, rgba(212,175,55,0.3) 27%, rgba(56, 50, 54, 0.3) 71%);*/
   background-image: url('https://bafybeicmona4zqs4oj65j3lsralwl4amtwuw47vuirxbq52xajdyxqqzne.ipfs-public.thirdwebcdn.com/light.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -179,7 +178,6 @@
   margin: 10px;
   margin-bottom: 25px;
   cursor: pointer;
-  /*background-image: url('https://bafybeib2zzqa2iwziopb7d7waj2rc6dnv5nnjpeq2sumwjywdo3b3lueom.ipfs-public.thirdwebcdn.com/Background_new.png');*/
   background-image: url('https://bafybeicmona4zqs4oj65j3lsralwl4amtwuw47vuirxbq52xajdyxqqzne.ipfs-public.thirdwebcdn.com/dark.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -273,12 +271,17 @@
   flex-wrap: wrap;
 }
 
+.placeholder {
+  margin-top: 0px;
+}
+
 .optionSelectBoxGenesis {
   border-radius: 16px;
   border: 1px solid #ccc;
   width: 1400px;
   min-height: 500px;
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -295,9 +298,6 @@
 }
 
 .boxleftgenesis{
-  width: 55%; 
-  flex-direction: column;
-  align-items: left;
 }
 
 .optionSelectBoxSeason3 {
@@ -335,6 +335,7 @@
   width: 1400px;
   min-height: 500px;
   height: 100%;
+  line-height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -465,7 +466,18 @@
   text-shadow: 0.1em 0.1em 0.2em #ffffff;
 }
 
-.selectBoxDescription {
+.selectBoxDescriptionGenesis {
+  font-size: 1rem;
+  color: #ffffff;;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 0px;
+  font-family: bold;
+  text-align: left;
+  line-height: 100%;
+}
+
+.selectBoxDescriptionright {
   font-size: 3rem;
   color: #ffffff;;
   margin-top: 0px;
@@ -475,24 +487,15 @@
   text-align: right;
 }
 
-.selectBoxDescriptionGenesis {
-  font-size: 1rem;
-  color: #ffffff;;
-  margin-top: 0px;
-  margin-left: 100px;
-  margin-right: 20px;
-  font-family: bold;
-  text-align: left;
-}
-
 .selectBoxDescriptionleft {
   font-size: 3rem;
   color: #ffffff;;
-  margin-top: 0px;
+  margin-top: 50px;
   margin-left: 100px;
   margin-right: 20px;
   font-family: bold;
   text-align: left;
+  line-height: 100%;
 }
 
 /* Between 1200 and 800 */
