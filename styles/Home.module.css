@@ -192,8 +192,6 @@
   text-shadow: 0.1em 0.1em 0.2em #55043e;
 }
 
-
-
 .nftBoxNode video {
   height: 20px;
   display: flex;
@@ -206,7 +204,6 @@
   text-shadow: 0.1em 0.1em 0.2em #ffdbf5;
   
 }
-
 
 .nftBox .nftMedia {
   transition: transform 0.3s ease-in-out;
@@ -259,7 +256,6 @@
   transform: scale(1.05);
 }
 
-
 .optionSelectBox {
   border-radius: 16px;
   border: 1px solid #ccc;
@@ -286,15 +282,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: right;
-  /*padding-left: 12px;
-  padding-right: 12px; */
+  justify-content: left;
   cursor: pointer;
   margin-bottom: 50px;
   border: 1px solid rgba(46, 44, 44, 0.4);
   box-shadow: 0 0 18px 0 #82919b; 
   flex-wrap: wrap;
-  background-image: url('https://bafybeie5mbi3gndc3epfmxrku36xccukxwwrotah4ovl7t32llwrxuyxca.ipfs.thirdwebstorage.com/New.png');
+  background-image: url('https://bafybeicvlwcxijveeo474dy5r7bhraopzwegk4qkm62gpxr6pgy547iqbe.ipfs.thirdwebstorage.com/genesis1.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -377,7 +371,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   cursor: pointer;
   /*border: 1px solid #ccc;
@@ -553,10 +547,10 @@
   font-size: 1rem;
   color: #ffffff;;
   margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 100px;
+  margin-left: 100px;
+  margin-right: 20px;
   font-family: bold;
-  text-align: right;
+  text-align: left;
 }
 
 .selectBoxDescriptionleft {

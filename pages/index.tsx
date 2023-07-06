@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           onClick={() => router.push(`/node`)}
         >
          
-         <div className={styles.boxrightgenesis}><h2 className={styles.selectBoxTitleGenesis}>GENESIS EDITION</h2>
+         <div className={styles.boxleftgenesis}><h2 className={styles.selectBoxTitleSeason2}>GENESIS EDITION</h2>
           <p className={styles.selectBoxDescriptionGenesis}>
           Get a rare <b>Genesis Edition</b> and <b>Stake</b> it{" "}
           to earn <b>USDT</b> rewards. Only available with <b>Unreveal Token</b>.
