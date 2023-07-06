@@ -513,29 +513,20 @@
     width: 90%;
     margin-top: 16px;
   }
-  .optionSelectBox {
-    width: 90%;
-    margin-top: 16px;
+  .selectBoxTitleGenesis {
+    font-size: 2rem;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
   }
-
-  .optionSelectBoxGenesis {
-    width: 90%;
-    margin-top: 16px;
-  }
-
-  .optionSelectBoxSeason1 {
-    width: 90%;
-    margin-top: 16px;
-  }
-
-  .optionSelectBoxSeason2 {
-    width: 90%;
-    margin-top: 16px;
-  }
-
   .optionSelectBoxSeason3 {
-    width: 90%;
-    margin-top: 16px;
+    justify-content: center;
+  }
+  .selectBoxDescription {
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
