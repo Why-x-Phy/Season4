@@ -24,7 +24,7 @@ const Home: NextPage = () => {
           role="button"
           onClick={() => router.push(`/node`)}
         >
-         <div className={styles.boxleftgenesis}></div>
+         
          <div className={styles.boxrightgenesis}><h2 className={styles.selectBoxTitleGenesis}>Genesis Edition</h2>
           <p className={styles.selectBoxDescription}>
           Get a rare <b>Genesis Edition</b> and <b>Stake</b> it{" "}

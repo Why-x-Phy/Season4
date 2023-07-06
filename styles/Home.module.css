@@ -326,7 +326,6 @@
 .boxleftgenesis{
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
-  /*border: 1px solid #ccc;*/
   width: 55%;
   min-height: 200px;
   height: 100%;
@@ -334,8 +333,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /*box-shadow: 0 0 18px 0 #82919b;*/
   cursor: pointer;
+  /*border: 1px solid #ccc;
+  /*box-shadow: 0 0 18px 0 #82919b;
   /*border: 1px solid rgba(46, 44, 44, 0.4);*/
 }
 
@@ -349,10 +349,10 @@
   flex-direction: column;
   align-items: right;
   justify-content: right;
+  cursor: pointer;
   /*border: 1px solid #ccc;
   box-shadow: 0 0 18px 0 #82919b;
   border: 1px solid rgba(46, 44, 44, 0.4);*/
-  cursor: pointer;
 }
 
 .optionSelectBox:hover {
