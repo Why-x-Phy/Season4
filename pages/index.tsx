@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         >
          
          <div className={styles.boxrightgenesis}><h2 className={styles.selectBoxTitleGenesis}>GENESIS EDITION</h2>
-          <p className={styles.selectBoxDescription}>
+          <p className={styles.selectBoxDescriptionGenesis}>
           Get a rare <b>Genesis Edition</b> and <b>Stake</b> it{" "}
           to earn <b>USDT</b> rewards. Only available with <b>Unreveal Token</b>.
           </p></div>
@@ -42,37 +42,36 @@ const Home: NextPage = () => {
         >
           {/* Staking an NFT */}
           
-          <h2 className={styles.selectBoxTitle}></h2>
+          <div className={styles.boxrightseason3}><h2 className={styles.selectBoxTitleGenesis}>NIGHTWOLF PLATOON</h2>
           <p className={styles.selectBoxDescription}>
-          </p>
+          <b>Season 3</b>
+          </p></div>
         </div>
 
         <div
-          className={styles.optionSelectBoxSeason3}
+          className={styles.optionSelectBoxSeason2}
           role="button"
           onClick={() => router.push(`/season2`)}
         >
-          {/* Mint a new NFT */}
-          <Image src="/icons/lion.webp" alt="lion" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>Season 2</h2>
-          <p className={styles.selectBoxDescription}>
-          Enter the unique world of <b>Angry Animals Part 2</b>.{" "}
-          Mint and Stake your NFT`s to earn <b>Unreveal Tokens</b>.
-          </p>
+          {/* Mint a new NFT 
+          <Image src="/icons/lion.webp" alt="lion" width={64} height={64} /> */}
+          <div className={styles.boxleftseason2}><h2 className={styles.selectBoxTitleSeason2}>ANGRY ANIMALS</h2>
+          <p className={styles.selectBoxDescriptionleft}>
+          <b>Season 2</b>
+          </p></div>
         </div>
 
         <div
-          className={styles.optionSelectBoxSeason3}
+          className={styles.optionSelectBoxSeason1}
           role="button"
           onClick={() => router.push(`/season1`)}
         >
-          {/* Staking an NFT */}
-          <Image src="/icons/gorilla.webp" alt="coming" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>Season 1</h2>
+          {/* Staking an NFT 
+          <Image src="/icons/gorilla.webp" alt="coming" width={64} height={64} />*/}
+          <div className={styles.boxrightseason1}><h2 className={styles.selectBoxTitleGenesis}>ANGRY ANIMALS</h2>
           <p className={styles.selectBoxDescription}>
-          Enter the unique world of <b>Angry Animals Part 1</b>.{" "}
-          Mint and Stake your NFT`s to earn <b>Unreveal Tokens</b>.
-          </p>
+          <b>Season 1</b>
+          </p></div>
         </div>
 
       </div>
