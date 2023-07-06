@@ -36,7 +36,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 100px !important;
   border: 1px solid rgba(46, 44, 44, 0.4);
   box-shadow: 0 0 18px 0 #82919b; 
 }
