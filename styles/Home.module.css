@@ -294,6 +294,12 @@
   background-size: cover;
 }
 
+.boxleftgenesis{
+  width: 55%; 
+  flex-direction: column;
+  align-items: left;
+}
+
 .optionSelectBoxSeason3 {
   border-radius: 16px;
   border: 1px solid #ccc;
@@ -317,6 +323,12 @@
   background-size: cover;
 }
 
+.boxrightseason3 {
+  width: 45%;
+  flex-direction: column;
+  align-items: right;
+}
+
 .optionSelectBoxSeason2 {
   border-radius: 16px;
   border: 1px solid #ccc;
@@ -327,8 +339,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: left;
-  /*padding-left: 12px;
-  padding-right: 12px; */
   cursor: pointer;
   margin-bottom: 50px;
   border: 1px solid rgba(46, 44, 44, 0.4);
@@ -338,6 +348,12 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
+}
+
+.boxleftseason2 {
+  width: 45%;
+  flex-direction: column;
+  align-items: left;
 }
 
 .optionSelectBoxSeason1 {
@@ -350,8 +366,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: right;
-  /*padding-left: 12px;
-  padding-right: 12px; */
   cursor: pointer;
   margin-bottom: 50px;
   border: 1px solid rgba(46, 44, 44, 0.4);
@@ -363,84 +377,10 @@
   background-size: cover;
 }
 
-.boxleftgenesis{
-  border-top-left-radius: 16px;
-  border-bottom-left-radius: 16px;
-  width: 55%;
-  min-height: 200px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: center;
-  cursor: pointer;
-  /*border: 1px solid #ccc;
-  /*box-shadow: 0 0 18px 0 #82919b;
-  /*border: 1px solid rgba(46, 44, 44, 0.4);*/
-}
-
-.boxrightgenesis {
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
-  width: 45%;
-  min-height: 200px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: right;
-  justify-content: right;
-  cursor: pointer;
-  /*border: 1px solid #ccc;
-  box-shadow: 0 0 18px 0 #82919b;
-  border: 1px solid rgba(46, 44, 44, 0.4);*/
-}
-
-.boxrightseason3 {
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
-  width: 45%;
-  min-height: 200px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: right;
-  justify-content: right;
-  cursor: pointer;
-  /*border: 1px solid #ccc;
-  box-shadow: 0 0 18px 0 #82919b;
-  border: 1px solid rgba(46, 44, 44, 0.4);*/
-}
-
-.boxleftseason2 {
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
-  width: 45%;
-  min-height: 200px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
-  cursor: pointer;
-  /*border: 1px solid #ccc;
-  box-shadow: 0 0 18px 0 #82919b;
-  border: 1px solid rgba(46, 44, 44, 0.4);*/
-}
-
 .boxrightseason1 {
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
   width: 45%;
-  min-height: 200px;
-  height: 100%;
-  display: flex;
   flex-direction: column;
   align-items: right;
-  justify-content: right;
-  cursor: pointer;
-  /*border: 1px solid #ccc;
-  box-shadow: 0 0 18px 0 #82919b;
-  border: 1px solid rgba(46, 44, 44, 0.4);*/
 }
 
 .optionSelectBox:hover {
@@ -469,14 +409,6 @@
   transform: scale(1.02);
 }
 
-.optionSelectBox1:hover {
-  background-image: url('https://bafybeicmona4zqs4oj65j3lsralwl4amtwuw47vuirxbq52xajdyxqqzne.ipfs-public.thirdwebcdn.com/dark.png');
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: cover;
-  transition: 0.7s;
-  transform: scale(1.02);
-}
 
 /* Keyframes for select border aniamtion
 @keyframes glowing-border {
@@ -582,6 +514,26 @@
     margin-top: 16px;
   }
   .optionSelectBox {
+    width: 90%;
+    margin-top: 16px;
+  }
+
+  .optionSelectBoxGenesis {
+    width: 90%;
+    margin-top: 16px;
+  }
+
+  .optionSelectBoxSeason1 {
+    width: 90%;
+    margin-top: 16px;
+  }
+
+  .optionSelectBoxSeason2 {
+    width: 90%;
+    margin-top: 16px;
+  }
+
+  .optionSelectBoxSeason3 {
     width: 90%;
     margin-top: 16px;
   }
