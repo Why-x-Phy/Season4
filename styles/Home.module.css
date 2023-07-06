@@ -514,19 +514,34 @@
     margin-top: 16px;
   }
   .selectBoxTitleGenesis {
-    font-size: 2rem;
+    font-size: 1.1rem;
     margin-left: 0px;
     margin-right: 0px;
     text-align: center;
+    justify-content: center;
   }
   .optionSelectBoxSeason3 {
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url('https://bafybeidmzrq6vijrylcz3r72sx4whhdj6awhpgpkco2tmhfdo4jv2cpxdi.ipfs.thirdwebstorage.com/season3.png');
+    background-repeat: no-repeat;
+    background-position: 35% 0;
+    background-size: cover;
+    min-height: 300px;
+    
   }
   .selectBoxDescription {
     font-size: 1rem;
     text-align: center;
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .boxrightseason3 {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
