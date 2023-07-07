@@ -330,7 +330,7 @@
   border-radius: 16px;
   border: 1px solid #ccc;
   width: 1400px;
-  min-height: 500px;
+  min-height: 400px;
   height: 100%;
   width: 100%;
   line-height: 100%;
@@ -353,7 +353,7 @@
   border-radius: 16px;
   border: 1px solid #ccc;
   width: 1400px;
-  min-height: 500px;
+  min-height: 400px;
   height: 100%;
   width: 100%;
   display: flex;
