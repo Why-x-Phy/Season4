@@ -10,6 +10,25 @@
   padding: 0 24px;
 }
 
+.genesis {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
+  padding: 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(46, 44, 44, 0.4);
+  box-shadow: 0 0 18px 0 #82919b;
+}
+
+.season {
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(46, 44, 44, 0.4);
+  box-shadow: 0 0 18px 0 #82919b;
+}
+
 .loading {
   margin-top: 150px;
   display: flex;
@@ -102,12 +121,13 @@
 
 
 .nftBoxGrid {
+  width: 100%;
+  height: 100%;
   max-width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
   justify-content: center;
   gap: 1%;
   margin-top: 15px;
@@ -264,7 +284,7 @@
   border-radius: 16px;
   border: 1px solid #ccc;
   width: 1400px;
-  min-height: 500px;
+  min-height: 600px;
   height: 100%;
   width: 100%;
   display: flex;
@@ -272,7 +292,7 @@
   align-items: center;
   justify-content: left;
   cursor: pointer;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px; */
   border: 1px solid rgba(46, 44, 44, 0.4);
   box-shadow: 0 0 18px 0 #82919b; 
   flex-wrap: wrap;
@@ -286,7 +306,7 @@
   border-radius: 16px;
   border: 1px solid #ccc;
   width: 1400px;
-  min-height: 500px;
+  min-height: 400px;
   height: 100%;
   width: 100%;
   display: flex;

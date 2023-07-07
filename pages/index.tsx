@@ -19,6 +19,7 @@ const Home: NextPage = () => {
       <h1 className={styles.h1}></h1>
       <div className={styles.nftBoxGrid}>
         
+      <div className={styles.genesis}>
         <div
           className={styles.optionSelectBoxGenesis}
           role="button"
@@ -32,12 +33,13 @@ const Home: NextPage = () => {
           <p className={styles.selectBoxDescriptionGenesis}>
           <p>Get a rare <b>Genesis Edition</b> and <b>Stake</b> it to earn <b>USDT</b> rewards.</p>
           Only available with <b>Unreveal Token</b>.
-          </p></div>
+          </p></div></div>
           {/* Mint a new NFT */}
           
           
         </div>
 
+        <div className={styles.season}>
         <div
           className={styles.optionSelectBoxSeason3}
           role="button"
@@ -61,7 +63,7 @@ const Home: NextPage = () => {
         >
           {/* Mint a new NFT 
           <Image src="/icons/lion.webp" alt="lion" width={64} height={64} /> */}
-          <div className={styles.placeholder}><h2 className={styles.selectBoxTitleSeason2}>
+          <div className={styles.placeholder}><h2 className={styles.nSeason2}>
           <p>ANGRY</p>
             ANIMALS
             </h2>
@@ -85,7 +87,7 @@ const Home: NextPage = () => {
           <b>Season 1</b>
           </p></div>
         </div>
-
+        </div>
       </div>
     </div>
     
