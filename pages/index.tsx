@@ -63,7 +63,7 @@ const Home: NextPage = () => {
         >
           {/* Mint a new NFT 
           <Image src="/icons/lion.webp" alt="lion" width={64} height={64} /> */}
-          <div className={styles.placeholder}><h2 className={styles.nSeason2}>
+          <div className={styles.placeholder}><h2 className={styles.selectBoxTitleSeason2}>
           <p>ANGRY</p>
             ANIMALS
             </h2>
