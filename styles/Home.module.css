@@ -319,7 +319,7 @@
   cursor: pointer;
   margin-bottom: 50px;
   border: 1px solid rgba(46, 44, 44, 0.4);
-  box-shadow: 0 0 18px 0 #82919b; 
+  /*box-shadow: 0 0 18px 0 #82919b;*/
   flex-wrap: wrap;
   /*background-image: url('https://bafybeidmzrq6vijrylcz3r72sx4whhdj6awhpgpkco2tmhfdo4jv2cpxdi.ipfs.thirdwebstorage.com/season3.png'); */
   background-image: url('https://bafybeid2ternw4lgtsx5qgraazllpex6wtaueeqbaqow3vmrx6ji3bugy4.ipfs.twipfs.com/1.png');
@@ -343,7 +343,7 @@
   cursor: pointer;
   margin-bottom: 50px;
   border: 1px solid rgba(46, 44, 44, 0.4);
-  box-shadow: 0 0 18px 0 #82919b; 
+  /*box-shadow: 0 0 18px 0 #82919b; */
   flex-wrap: wrap;
   background-image: url('https://bafybeihuibvt4c7lsew3t4j36bfknhlnnnwbcnnktc5xtdokl5f5kzewla.ipfs.twipfs.com/3.png');
   background-repeat: no-repeat;
@@ -364,7 +364,7 @@
   justify-content: right;
   cursor: pointer;
   border: 1px solid rgba(46, 44, 44, 0.4);
-  box-shadow: 0 0 18px 0 #82919b; 
+  /*box-shadow: 0 0 18px 0 #82919b; */
   flex-wrap: wrap;
   /*background-image: url('https://bafybeidmzrq6vijrylcz3r72sx4whhdj6awhpgpkco2tmhfdo4jv2cpxdi.ipfs.thirdwebstorage.com/season1.png');*/
   background-image: url('https://bafybeihuibvt4c7lsew3t4j36bfknhlnnnwbcnnktc5xtdokl5f5kzewla.ipfs.twipfs.com/4.png');
