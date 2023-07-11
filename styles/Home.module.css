@@ -317,7 +317,7 @@
   /*padding-left: 12px;
   padding-right: 12px; */
   cursor: pointer;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   border: 1px solid rgba(46, 44, 44, 0.4);
   /*box-shadow: 0 0 18px 0 #82919b;*/
   flex-wrap: wrap;
@@ -341,7 +341,7 @@
   align-items: center;
   justify-content: left;
   cursor: pointer;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   border: 1px solid rgba(46, 44, 44, 0.4);
   /*box-shadow: 0 0 18px 0 #82919b; */
   flex-wrap: wrap;
@@ -383,22 +383,22 @@
 
 .optionSelectBoxGenesis:hover {
   transition: 0.7s;
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .optionSelectBoxSeason3:hover {
   transition: 0.7s;
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .optionSelectBoxSeason2:hover {
   transition: 0.7s;
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .optionSelectBoxSeason1:hover {
   transition: 0.7s;
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 
@@ -462,7 +462,7 @@
   color:#ffffff;
   font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
   text-align: right;
-  text-shadow: 0.1em 0.1em 0.2em #ffffff;
+  text-shadow: 0em 0em 0.5em #ffffff;
 }
 
 .selectBoxTitleLeft {
@@ -474,7 +474,7 @@
   color:#ffffff;
   font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
   text-align: left;
-  text-shadow: 0.1em 0.1em 0.2em #ffffff;
+  text-shadow: 0em 0em 0.5em #ffffff;
 }
 
 .selectBoxDescriptionGenesis {
@@ -554,15 +554,7 @@
   }
 
   .selectBoxTitleGenesis {
-    font-size: 1.1rem;
-    margin-left: 0px;
-    margin-right: 0px;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .selectBoxTitleSeason2 {
-    font-size: 1.1rem;
+    font-size: 2rem;
     margin-left: 0px;
     margin-right: 0px;
     text-align: center;
@@ -570,7 +562,7 @@
   }
 
   .selectBoxTitleLeft {
-    font-size: 1.1rem;
+    font-size: 2rem;
     margin-left: 0px;
     margin-right: 0px;
     text-align: center;
@@ -578,7 +570,7 @@
   }
 
   .selectBoxTitleRight {
-    font-size: 1.1rem;
+    font-size: 2rem;
     margin-left: 0px;
     margin-right: 0px;
     text-align: center;
