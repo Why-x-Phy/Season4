@@ -11,7 +11,7 @@
 }
 
 .genesis {
-  width: 100%;
+  width: 1250px;
   height: 100%;
   margin-bottom: 80px;
   padding: 25px;
@@ -21,7 +21,7 @@
 }
 
 .season {
-  width: 100%;
+  width: 1250px;
   height: 100%;
   padding: 25px;
   border-radius: 16px;
@@ -283,8 +283,8 @@
 .optionSelectBoxGenesis {
   border-radius: 16px;
   border: 1px solid #ccc;
-  width: 1400px;
-  min-height: 600px;
+  width: 1200px;
+  min-height: 500px;
   height: 100%;
   width: 100%;
   display: flex;
@@ -296,7 +296,8 @@
   border: 1px solid rgba(46, 44, 44, 0.4);
   /*box-shadow: 0 0 18px 0 #82919b; */
   flex-wrap: wrap;
-  background-image: url('https://bafybeicvlwcxijveeo474dy5r7bhraopzwegk4qkm62gpxr6pgy547iqbe.ipfs.thirdwebstorage.com/genesis1.png');
+  /*background-image: url('https://bafybeicvlwcxijveeo474dy5r7bhraopzwegk4qkm62gpxr6pgy547iqbe.ipfs.thirdwebstorage.com/genesis1.png');*/
+  background-image: url('https://bafybeid2ternw4lgtsx5qgraazllpex6wtaueeqbaqow3vmrx6ji3bugy4.ipfs.twipfs.com/4.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -305,8 +306,8 @@
 .optionSelectBoxSeason3 {
   border-radius: 16px;
   border: 1px solid #ccc;
-  width: 1400px;
-  min-height: 400px;
+  width: 1200px;
+  min-height: 350px;
   height: 100%;
   width: 100%;
   display: flex;
@@ -321,7 +322,7 @@
   box-shadow: 0 0 18px 0 #82919b; 
   flex-wrap: wrap;
   /*background-image: url('https://bafybeidmzrq6vijrylcz3r72sx4whhdj6awhpgpkco2tmhfdo4jv2cpxdi.ipfs.thirdwebstorage.com/season3.png'); */
-  background-image: url('https://bafybeib4ouuy4mnoeoxpc5ztg33ptnjlmvvmmg3dadep5r5wgvtypyozhi.ipfs.thirdwebstorage.com/Season03_1400x400.jpg');
+  background-image: url('https://bafybeid2ternw4lgtsx5qgraazllpex6wtaueeqbaqow3vmrx6ji3bugy4.ipfs.twipfs.com/1.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -330,8 +331,8 @@
 .optionSelectBoxSeason2 {
   border-radius: 16px;
   border: 1px solid #ccc;
-  width: 1400px;
-  min-height: 400px;
+  width: 1200px;
+  min-height: 350px;
   height: 100%;
   width: 100%;
   line-height: 100%;
@@ -344,7 +345,7 @@
   border: 1px solid rgba(46, 44, 44, 0.4);
   box-shadow: 0 0 18px 0 #82919b; 
   flex-wrap: wrap;
-  background-image: url('https://bafybeidmzrq6vijrylcz3r72sx4whhdj6awhpgpkco2tmhfdo4jv2cpxdi.ipfs.thirdwebstorage.com/season2.png');
+  background-image: url('https://bafybeid2ternw4lgtsx5qgraazllpex6wtaueeqbaqow3vmrx6ji3bugy4.ipfs.twipfs.com/2.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -353,8 +354,8 @@
 .optionSelectBoxSeason1 {
   border-radius: 16px;
   border: 1px solid #ccc;
-  width: 1400px;
-  min-height: 400px;
+  width: 1200px;
+  min-height: 350px;
   height: 100%;
   width: 100%;
   display: flex;
@@ -366,7 +367,7 @@
   box-shadow: 0 0 18px 0 #82919b; 
   flex-wrap: wrap;
   /*background-image: url('https://bafybeidmzrq6vijrylcz3r72sx4whhdj6awhpgpkco2tmhfdo4jv2cpxdi.ipfs.thirdwebstorage.com/season1.png');*/
-  background-image: url('https://bafybeiaxe7p77ns25wf4n7znhhurxj255no6ryjvkni75mffdmjuo7yakm.ipfs.twipfs.com/Season01_Text.png');
+  background-image: url('https://bafybeid2ternw4lgtsx5qgraazllpex6wtaueeqbaqow3vmrx6ji3bugy4.ipfs.twipfs.com/3.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
