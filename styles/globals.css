@@ -45,14 +45,14 @@ body {
 }
 
 h2 {
-  font-family:bold;
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif !important;
   font-size: 2.5rem;
-  color: #C27dFF;
+  color: #f3f0f3;
   text-shadow: rgb(49, 49, 49) 0.05em 0.05em 0.05em;
 }
 
 h4 {
-  color: #C27dFF;
+  color: #f3f0f3;
   text-shadow: rgb(49, 49, 49) 0.05em 0.05em 0.05em;
 }
 
