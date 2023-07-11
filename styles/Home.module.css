@@ -7,14 +7,14 @@
   justify-content: center;
   width: 100%;
   position: absolute;
-  padding: 0 24px;
+  padding: 0 12px;
 }
 
 .genesis {
   width: 1250px;
   height: 100%;
   margin-bottom: 80px;
-  padding: 25px;
+  padding: 15px;
   border-radius: 16px;
   border: 1px solid rgba(46, 44, 44, 0.4);
   box-shadow: 0 0 18px 0 #82919b;
@@ -23,7 +23,7 @@
 .season {
   width: 1250px;
   height: 100%;
-  padding: 25px;
+  padding: 15px;
   border-radius: 16px;
   border: 1px solid rgba(46, 44, 44, 0.4);
   box-shadow: 0 0 18px 0 #82919b;
@@ -317,7 +317,7 @@
   /*padding-left: 12px;
   padding-right: 12px; */
   cursor: pointer;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   border: 1px solid rgba(46, 44, 44, 0.4);
   /*box-shadow: 0 0 18px 0 #82919b;*/
   flex-wrap: wrap;
@@ -341,7 +341,7 @@
   align-items: center;
   justify-content: left;
   cursor: pointer;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   border: 1px solid rgba(46, 44, 44, 0.4);
   /*box-shadow: 0 0 18px 0 #82919b; */
   flex-wrap: wrap;
