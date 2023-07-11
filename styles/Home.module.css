@@ -365,7 +365,8 @@
   border: 1px solid rgba(46, 44, 44, 0.4);
   box-shadow: 0 0 18px 0 #82919b; 
   flex-wrap: wrap;
-  background-image: url('https://bafybeidmzrq6vijrylcz3r72sx4whhdj6awhpgpkco2tmhfdo4jv2cpxdi.ipfs.thirdwebstorage.com/season1.png');
+  /*background-image: url('https://bafybeidmzrq6vijrylcz3r72sx4whhdj6awhpgpkco2tmhfdo4jv2cpxdi.ipfs.thirdwebstorage.com/season1.png');*/
+  background-image: url('https://bafybeiaxe7p77ns25wf4n7znhhurxj255no6ryjvkni75mffdmjuo7yakm.ipfs.twipfs.com/Season01_Text.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
