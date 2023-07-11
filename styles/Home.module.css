@@ -441,6 +441,7 @@
   radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-size: 5rem;
     margin-top: 1px;
     margin-bottom: 8px;
