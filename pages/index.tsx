@@ -26,13 +26,13 @@ const Home: NextPage = () => {
           onClick={() => router.push(`/node`)}
         >
          
-         <div className={styles.placeholder}><h2 className={styles.selectBoxTitleSeason2}>
+         <div className={styles.placeholder}><h2 className={styles.selectBoxTitleGenesis}>
          <p>GENESIS</p>
          EDITION
           </h2>
           <p className={styles.selectBoxDescriptionGenesis}>
-          <p>Get a rare <b>Genesis Edition</b> and <b>Stake</b> it to earn <b>USDT</b> rewards.</p>
-          Only available with <b>Unreveal Token</b>.
+          <p>Receive USDT-Rewards by</p>
+          staking the Genesis Edition
           </p></div></div>
           {/* Mint a new NFT */}
           
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
         >
           {/* Staking an NFT */}
           
-          <div className={styles.placeholder}><h2 className={styles.selectBoxTitleGenesis}>
+          <div className={styles.placeholder}><h2 className={styles.selectBoxTitleRight}>
           <p>NIGHTWOLF</p>
             PLATOON
             </h2>
@@ -63,7 +63,7 @@ const Home: NextPage = () => {
         >
           {/* Mint a new NFT 
           <Image src="/icons/lion.webp" alt="lion" width={64} height={64} /> */}
-          <div className={styles.placeholder}><h2 className={styles.selectBoxTitleSeason2}>
+          <div className={styles.placeholder}><h2 className={styles.selectBoxTitleLeft}>
           <p>ANGRY</p>
             ANIMALS
             </h2>
@@ -79,7 +79,7 @@ const Home: NextPage = () => {
         >
           {/* Staking an NFT 
           <Image src="/icons/gorilla.webp" alt="coming" width={64} height={64} />*/}
-          <div className={styles.placeholder}><h2 className={styles.selectBoxTitleGenesis}>
+          <div className={styles.placeholder}><h2 className={styles.selectBoxTitleRight}>
           <p>ANGRY</p>
             ANIMALS
             </h2>
