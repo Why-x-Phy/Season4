@@ -568,14 +568,30 @@
     justify-content: center;
   }
 
-  .selectBoxDescriptionright {
+  .selectBoxTitleLeft {
+    font-size: 1.1rem;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .selectBoxTitleRight {
+    font-size: 1.1rem;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .selectBoxDescriptionGenesis {
     font-size: 1rem;
     text-align: center;
     margin-left: 0px;
     margin-right: 0px;
   }
 
-  .selectBoxDescriptionGenesis {
+  .selectBoxDescriptionright {
     font-size: 1rem;
     text-align: center;
     margin-left: 0px;
