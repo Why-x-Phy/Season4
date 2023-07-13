@@ -5,7 +5,7 @@ export const tokenContractAddress1 =
 export const nftDropNode =
   "0xC8E4AfC08051D7F3D63BEdA0D03Aa9fac3299bC2";
 export const stakingNode =
-  "0xa2773843ba415Dfcb338875198cF7564FC68A6f5";
+  "0x07821F1Ed713eD1b0d8534589ca773595d6fE27D";
 export const nftDropSeason1 =
   "0x1036Dd30465D1D8f2FB0D6F4786a6cd4eD69D493";
 export const stakingSeason1 =
