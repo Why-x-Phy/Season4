@@ -49,7 +49,7 @@ const Home: NextPage = () => {
           {/* Staking an NFT */}
           
           <div className={styles.placeholder}><h2 className={styles.selectBoxTitleRight}>
-          <p>NIGHTWOLF</p>
+          <p>NIGHTBEAR</p>
             PLATOON
             </h2>
           <p className={styles.selectBoxDescriptionright}>

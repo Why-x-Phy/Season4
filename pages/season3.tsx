@@ -108,7 +108,7 @@ if (isLoading) {
        
         
         
-        <h1 className={styles.h1}>Mint Nightwolf Platoon NFTs</h1>
+        <h1 className={styles.h1}>Mint Nightbear Platoon NFTs</h1>
   
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
