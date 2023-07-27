@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
 
 /* Box sizing rules */
 *,
@@ -45,7 +46,7 @@ body {
 }
 
 h2 {
-  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif !important;
+  font-family: 'Questrial' !important;
   font-size: 2.5rem;
   color: #f3f0f3;
   text-shadow: rgb(49, 49, 49) 0.05em 0.05em 0.05em;

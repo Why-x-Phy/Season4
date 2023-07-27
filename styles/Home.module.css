@@ -315,7 +315,7 @@
 /*  ################# INDEX  #################  */
 
 .optionSelectBack {
-  border-radius: 16px;
+  border-radius: 50px;
   border: 1px solid #ccc;
   width: 30%;
   min-height: 80px;
@@ -329,8 +329,8 @@
   padding-right: 12px;
   cursor: pointer;
   margin-bottom: 40px;
-  border: 1px solid rgba(46, 44, 44, 0.4);
-  box-shadow: 0 0 18px 0 #82919b; 
+  border: 1px solid rgba(46, 44, 44, 0.1);
+  box-shadow: 0 0 18px 0 #4693FF; 
 }
 
 .optionSelectBack:hover {
@@ -483,8 +483,10 @@
   margin-top: 5px;
   margin-bottom: 5px;
   color:#ffffff;
-  font-family: bold;
+  font-family: 'Questrial' !important;
 }
+
+
 
 /*.selectBoxTitleGenesis {
   font-size: 5rem;
