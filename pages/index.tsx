@@ -43,7 +43,7 @@ const Home: NextPage = () => {
         <div
           className={styles.optionSelectBoxSeason3}
           role="button"
-          onClick={() => router.push(`/`)}
+          onClick={() => router.push(`/season3`)}
        
         >
           {/* Staking an NFT */}

@@ -213,9 +213,9 @@ if (isLoading) {
             {stakedTokens &&
               stakedTokens[0]?.map((stakedToken: BigNumber) => (
                 <div
-                  className={`${styles.nftBox} ${
+                  className={`${styles.nftBoxSeason3} ${
                     selectedNftsToWithdraw.includes(stakedToken.toString())
-                      ? styles.selected
+                      ? styles.selectedSeason3
                       : ""
                   }`}
                   key={stakedToken.toString()}
@@ -252,8 +252,8 @@ if (isLoading) {
           <div className={styles.nftBoxGrid}>
             {ownedNfts?.map((nft) => (
               <div
-                className={`${styles.nftBox} ${
-                  selectedNfts.includes(nft.metadata.id) ? styles.selected : ""
+                className={`${styles.nftBoxSeason3} ${
+                  selectedNfts.includes(nft.metadata.id) ? styles.selectedSeason3 : ""
                 }`}
                 key={nft.metadata.id.toString()}
                 onClick={() => {
@@ -270,7 +270,7 @@ if (isLoading) {
               >
                 <ThirdwebNftMedia
                   metadata={nft.metadata}
-                  className={styles.nftMedia}
+                  className={styles.nftMediaSeason3}
                 />
                 <h3>{nft.metadata.name}</h3>
               </div>

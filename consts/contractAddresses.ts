@@ -15,6 +15,6 @@ export const nftDropSeason2 =
 export const stakingSeason2 =
   "0xd84BeFfBC24D75544993FF3DEb3C93e5d4307289";
 export const nftDropSeason3 =
-  "0x1036Dd30465D1D8f2FB0D6F4786a6cd4eD69D493";
+  "0x7Be3d4477b9494c0E656A07757Bb6B455146D819";
 export const stakingSeason3 =
-  "0xbd907EFe4fb68D21c9D5863582C08b1ea66336a4";
+  "0x1c7BAe5bE3B319a86b47Fe88B3CD60ECb54c129d";

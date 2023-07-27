@@ -30,7 +30,7 @@ const NFTCard: FC<NFTCardProps> = ({ tokenId }) => {
             
             <ThirdwebNftMedia
             metadata={nft.metadata}
-            className={styles.nftMedia}
+            className={styles.nftMediaSeason3}
             />
             
           )}

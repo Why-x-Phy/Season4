@@ -64,8 +64,8 @@
   color:#f3f0f3 !important;
   /*background: #3C1B32 !important;*/
   /*background:#0b102c !important; */
-  /*background-image: url('https://bafybeib2zzqa2iwziopb7d7waj2rc6dnv5nnjpeq2sumwjywdo3b3lueom.ipfs-public.thirdwebcdn.com/Background_new.png') !important;*/
-  background-image: url('https://bafybeidjzfk4h6w6koap6hvblj7ny4l7plbp7eqw4v7m2bqf3ezebrnfbu.ipfs-public.thirdwebcdn.com/Wallet_Background2.png') !important;
+  background-image: url('https://bafybeib2zzqa2iwziopb7d7waj2rc6dnv5nnjpeq2sumwjywdo3b3lueom.ipfs-public.thirdwebcdn.com/Background_new.png') !important;
+  /*background-image: url('https://bafybeidjzfk4h6w6koap6hvblj7ny4l7plbp7eqw4v7m2bqf3ezebrnfbu.ipfs-public.thirdwebcdn.com/Wallet_Background2.png') !important;*/
   background-repeat: no-repeat !important;
   background-position: 50% 0 !important;
   background-size: cover !important;
@@ -140,7 +140,8 @@
   align-items: center;
   flex-direction: column;
   border: 1px solid #3C1B32;
-  min-height: 240px;
+  min-height: 250px;
+  min-width: 200px;
   padding: 10px;
   margin-top: 10px;
   
@@ -153,6 +154,12 @@
   margin: 10px;
   margin-bottom: 25px;
   cursor: pointer;
+}
+
+.nftMediaSeason3 {
+  max-width: 180px !important;
+  max-height: 180px !important;
+  border-radius: 15px;
 }
 
 .nftBox:hover {
@@ -168,10 +175,19 @@
   transition: 0.7s;
 }
 
+.nftBoxSeason3:hover {
+  background-image: url('https://bafybeicmona4zqs4oj65j3lsralwl4amtwuw47vuirxbq52xajdyxqqzne.ipfs-public.thirdwebcdn.com/light.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  transition: 0.7s;
+}
+
 
 .nftBox h3 {
   height: 20px;
-  max-width: 150px;
+  min-width: 180px;
+  max-width: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,6 +243,38 @@
   
 }
 
+.nftBoxSeason3 {
+  border-radius: 16px;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  border: 1px solid #b6b3b5;
+  min-height: 300x;
+  padding: 10px;
+  margin-top: 10px;
+  min-width: 200px;
+  max-width: 200px;
+  transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+  display: flex;
+  margin: 10px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  background-image: url('https://bafybeicmona4zqs4oj65j3lsralwl4amtwuw47vuirxbq52xajdyxqqzne.ipfs-public.thirdwebcdn.com/dark.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.nftBoxSeason3 h3 {
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif !important;
+  color: #f3f0f0;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #fafaf8 0%, #1f287e 8%, #f5f5f4 10%, #636a80 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #f1f1f0 8%, #f1f1ef 25%, #7c79af 62.5%, #f5f4f4 100%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .nftBox .nftMedia {
   transition: transform 0.3s ease-in-out;
 }
@@ -239,6 +287,17 @@
 }
 
 .selectedNode {
+  transform: scale(1.1);
+  border: 1px solid rgba(46, 44, 44, 0.4);
+  box-shadow: 0 0 10px #e4e1e3, 0 0 20px #f6f4f7;
+  animation: glowing-border 1.5s infinite;
+  background-image: url('https://bafybeicmona4zqs4oj65j3lsralwl4amtwuw47vuirxbq52xajdyxqqzne.ipfs-public.thirdwebcdn.com/light.png') ;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.selectedSeason3 {
   transform: scale(1.1);
   border: 1px solid rgba(46, 44, 44, 0.4);
   box-shadow: 0 0 10px #e4e1e3, 0 0 20px #f6f4f7;
@@ -325,8 +384,7 @@
   border: 1px solid rgba(46, 44, 44, 0.4);
   /*box-shadow: 0 0 18px 0 #82919b;*/
   flex-wrap: wrap;
-  background-image: url('https://bafybeicdi5jyetiedgakiue7q62clbpf76unnen7zlm5f6656k4rtkcalu.gateway.ipfscdn.io/soon.png');
-  /*background-image: url('https://bafybeib66d5bloz462kmxmmf4a4kfsul7oukx6oxne3bjzwvbiytiezn6y.gateway.ipfscdn.io/banner.png'); */
+  background-image: url('https://bafybeid6gbpq65nl3aisojtmywut7bmhwnnmpqew4kmk5ld7xmosnltphe.gateway.ipfscdn.io/Season3.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
