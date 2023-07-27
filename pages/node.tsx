@@ -177,7 +177,7 @@ const Home: NextPage = () => {
                 <b>
                   {!claimableRewards
                     ? "Loading..."
-                    : Number(ethers.utils.formatUnits(claimableRewards, 6)).toFixed(8)}
+                    : Number(ethers.utils.formatUnits(claimableRewards, 6)).toFixed(3)}
                 </b>{" "}
                 {tokenBalance1?.symbol}
               </p>
@@ -186,7 +186,7 @@ const Home: NextPage = () => {
             <div className={styles.tokenItem}>
               <h3 className={styles.tokenLabel}>Current USDT Balance</h3>
               <p className={styles.tokenValue}>
-                <b>{tokenBalance1?.displayValue !== undefined ? parseFloat(tokenBalance1.displayValue).toFixed(8) : ""}</b> {tokenBalance1?.symbol}
+                <b>{tokenBalance1?.displayValue !== undefined ? parseFloat(tokenBalance1.displayValue).toFixed(3) : ""}</b> {tokenBalance1?.symbol}
               </p>
             </div>
           </div>
