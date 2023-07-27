@@ -65,7 +65,7 @@
   border-radius: 30px !important;
   /*background: #3C1B32 !important;*/
   /*background:#0b102c !important; */
-  background-image: url('https://bafybeihvtrfteh42qz3oqudwk42ypbw3wkryso44cm74wniaxsxbzisuhe.gateway.ipfscdn.io/Wallet_Unreveal.png') !important;
+  background-image: url('https://bafybeieb3td5y4upyaokmdxnxwhfpzz5ghikbv26koxg57rzbi7kijdt5m.gateway.ipfscdn.io/wallet_B.png') !important;
   /*background-image: url('https://bafybeidjzfk4h6w6koap6hvblj7ny4l7plbp7eqw4v7m2bqf3ezebrnfbu.ipfs-public.thirdwebcdn.com/Wallet_Background2.png') !important;*/
   background-repeat: no-repeat !important;
   background-position: 50% 0 !important;
@@ -88,7 +88,8 @@
 }
 
 .h1 {
-  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif !important;
+  font-family: 'Questrial' !important;
+  /*font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif !important;*/
   font-size: 3rem;
   font-family: bold;
   margin-bottom: 0px;
@@ -337,7 +338,8 @@
 
 .optionSelectBack:hover {
   /*background: linear-gradient(158deg, rgba(112,191,238,0.3) 27%, rgba(255,219,245,0.3) 71%);*/
-  background: #52FEFE ;
+  /*background: #52FEFE ;*/
+  background:#03B5FF;
   transition: 0.7s;
   transform: scale(1.05);
   font-family: 'Questrial' !important;
