@@ -800,3 +800,10 @@
   justify-content: center;
   gap: 10%;
 }
+
+.quantityControlButton:hover {
+  background: linear-gradient(158deg, rgba(48, 2, 42, 0.8) 27%, rgba(8, 0, 6, 0.8) 71%);
+  transition: 0.7s;
+  transform: scale(1.02);
+  color: #FFFFFF;
+}
