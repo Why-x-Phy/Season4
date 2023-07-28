@@ -338,7 +338,8 @@
   cursor: pointer;
   margin-bottom: 40px;
   border: 1px solid rgba(46, 44, 44, 0.1);
-  box-shadow: 0 0 18px 0 #4693FF; 
+  /*box-shadow: 0 0 18px 0 #4693FF; */
+  box-shadow: 0 0 18px 0 #82919b;
 }
 
 .optionSelectBack:hover {
