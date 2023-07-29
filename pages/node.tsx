@@ -118,7 +118,8 @@ const Home: NextPage = () => {
         <h1 className={styles.h1}>Buy a Genesis Edition</h1>
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
         <p className={styles.explain}>
-          <b>GENESIS EDITION </b> costs <b>120 000 UR Token</b> and only <b>2 per Wallet</b> in a Season.
+          <b>GENESIS EDITION </b> buy launches <b>August 4th</b> and the price will also be announced here.
+          {/* <b>GENESIS EDITION </b> costs <b>120 000 UR Token</b> and only <b>2 per Wallet</b> in a Season.*/}
           <br />
           <br />
           <b>Stake your GENESIS EDITION</b> to earn <b>USDT</b> rewards with it.

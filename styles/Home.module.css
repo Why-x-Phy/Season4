@@ -275,8 +275,8 @@
 .nftBoxSeason3 h3 {
   font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif !important;
   color: #f3f0f0;
-  background: radial-gradient(ellipse farthest-corner at right bottom, #fafaf8 0%, #1f287e 8%, #f5f5f4 10%, #636a80 40%, transparent 80%),
-  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #f1f1f0 8%, #f1f1ef 25%, #7c79af 62.5%, #f5f4f4 100%); 
+  background: radial-gradient(ellipse farthest-corner at right bottom, #252524 0%, #1f287e 8%, #f5f5f4 10%, #636a80 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #2c2b2b 0%, #f1f1f0 8%, #f1f1ef 25%, #7c79af 62.5%, #f5f4f4 100%); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
