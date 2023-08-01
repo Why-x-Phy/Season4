@@ -4,12 +4,15 @@ import "../styles/globals.css";
 import Head from "next/head";
 
 // This is the chainId your dApp will work on.
-const activeChain = "polygon";
+// const activeChain = "polygon";
 //const activeChain = "mumbai";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider activeChain={activeChain}>
+    <ThirdwebProvider 
+    activeChain={"polygon"}
+    clientId="4353f9fd333d76c2bdff9b0a753a7319"
+    >
       <Component {...pageProps} />
     </ThirdwebProvider>
   );
