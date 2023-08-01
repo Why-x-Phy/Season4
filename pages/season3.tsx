@@ -113,12 +113,12 @@ if (isLoading) {
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
         <p className={styles.explain}>
-        {/*<b>Phase 1 Unreveal Mint</b> costs 1 NFT <b>5 Matic</b> and goes until August 31th.
+        <b>Unreveal Token Mint</b> costs 1 NFT <b>30 000 UR Token</b>  and starts on August 1th at 6pm UTC and runs until August 2th 6pm UTC.
+        <br /><br /> 
+         <b>Phase 1 Unreveal Mint</b> costs 1 NFT <b>5 Matic</b> and goes until August 31th.
          <br /><br /> 
-         <b>Phase 2 Reveal Mint</b> costs 1 NFT <b>10 Matic</b> and runs until September 30th.*/}
-         <b>Unreveal Token Mint</b> costs 1 NFT <b>30 000 UR Token</b>  and starts on August 1th at 6pm UTC
-         <br /><br /> 
-         and runs until August 2th 6pm UTC.
+         <b>Phase 2 Reveal Mint</b> costs 1 NFT <b>10 Matic</b> and runs until September 30th.
+         
          <br /><br /> 
         </p>
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
