@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@thirdweb-dev/contracts": "^3",
-    "@thirdweb-dev/react": "^3.12.2",
-    "@thirdweb-dev/sdk": "^3.10.17",
+    "@thirdweb-dev/react": "^3.14.23",
+    "@thirdweb-dev/sdk": "^3.10.42",
     "@types/react-query": "^1.2.9",
     "add": "^2.0.6",
     "eslint": "^7.32.0",
