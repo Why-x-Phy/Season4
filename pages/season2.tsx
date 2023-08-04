@@ -108,15 +108,15 @@ if (isLoading) {
        
         
         
-        <h1 className={styles.h1}>Mint Angry Animals Season 2 NFTs</h1>
+        <h1 className={styles.h1}>Angry Animals Season 2 is completed</h1>
   
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
         <p className={styles.explain}>
         
-        <b>Phase 1 Unreveal Mint</b> costs 1 NFT <b>4 Matic</b> and goes until Juni 30th.
+        <b>Unreveal and Reveal Mint is completed</b>
          <br /><br /> 
-         <b>Phase 2 Reveal Mint</b> costs 1 NFT <b>8 Matic</b> and runs until July 31th.
+         <b>Season 3 Mint is opened</b>
         </p>
         
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
@@ -124,7 +124,7 @@ if (isLoading) {
   
         
   
-        <div className={styles.quantityContainer}>
+        {/* <div className={styles.quantityContainer}>
                       <button
                         className={`${styles.quantityControlButton}`}
                         onClick={() => setQuantity(quantity - 1)}
@@ -159,7 +159,7 @@ if (isLoading) {
           }}
         >
           Mint An NFT
-        </Web3Button>
+        </Web3Button>*/}
         <br /><br /> 
         </p>
 

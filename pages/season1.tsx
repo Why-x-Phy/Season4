@@ -115,7 +115,7 @@ if (isLoading) {
         <p className={styles.explain}>
         <b>Unreveal and Reveal Mint is completed</b>
          <br /><br /> 
-         <b>Season 2 Mint is opened</b>
+         <b>Season 3 Mint is opened</b>
         </p>
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
