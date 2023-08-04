@@ -121,7 +121,7 @@ const Home: NextPage = () => {
           <b>GENESIS EDITION </b> costs <b>200 000 UR Token</b> and only <b>2 per Wallet</b> in a Season.
           <br />
           <br />
-          Stake your <b>Season NFTs</b> for <b>UR Token</b> to purchase a <b>Genesis Edition</b>. You can stak the Genesis Edition to earn <b>USDT</b> rewards.
+          Stake your <b>Season NFTs</b> for <b>UR Token</b> to purchase a <b>Genesis Edition</b>. You can stake the Genesis Edition to earn <b>USDT</b> rewards.
           <br /><br /> 
         </p>
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
