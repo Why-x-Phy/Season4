@@ -21,6 +21,7 @@ import {
   stakingSeason3,
   tokenContractAddress,
 } from "../consts/contractAddresses";
+import { fixNFTMetadata } from "../utils/fixNFTMetadata";
 
 
 const Home: NextPage = () => {
@@ -252,31 +253,34 @@ if (isLoading) {
           </Web3Button>
 
           <div className={styles.nftBoxGrid}>
-            {ownedNfts?.map((nft) => (
-              <div
-                className={`${styles.nftBoxSeason3} ${
-                  selectedNfts.includes(nft.metadata.id) ? styles.selectedSeason3 : ""
-                }`}
-                key={nft.metadata.id.toString()}
-                onClick={() => {
-                  setSelectedNfts((prevSelectedNfts) => {
-                    if (prevSelectedNfts.includes(nft.metadata.id)) {
-                      return prevSelectedNfts.filter(
-                        (id) => id !== nft.metadata.id
-                      );
-                    } else {
-                      return [...prevSelectedNfts, nft.metadata.id];
-                    }
-                  });
-                }}
-              >
-                <ThirdwebNftMedia
-                  metadata={nft.metadata}
-                  className={styles.nftMediaSeason3}
-                />
-                <h3>{nft.metadata.name}</h3>
-              </div>
-            ))}
+            {ownedNfts?.map((nft) => {
+              const meta = fixNFTMetadata(nft.metadata)
+              return (
+                <div
+                  className={`${styles.nftBoxSeason3} ${
+                    selectedNfts.includes(meta.id) ? styles.selectedSeason3 : ""
+                  }`}
+                  key={meta.id.toString()}
+                  onClick={() => {
+                    setSelectedNfts((prevSelectedNfts) => {
+                      if (prevSelectedNfts.includes(meta.id)) {
+                        return prevSelectedNfts.filter(
+                          (id) => id !== meta.id
+                        );
+                      } else {
+                        return [...prevSelectedNfts, meta.id];
+                      }
+                    });
+                  }}
+                >
+                  <ThirdwebNftMedia
+                    metadata={meta}
+                    className={styles.nftMediaSeason3}
+                  />
+                  <h3>{meta.name}</h3>
+                </div>
+              )
+            })}
           </div>
         </>
        

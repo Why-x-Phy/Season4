@@ -10,6 +10,7 @@ import {
   
 } from "../consts/contractAddresses";
 import styles from "../styles/Home.module.css";
+import { fixNFTMetadata } from "../utils/fixNFTMetadata";
 
 interface NFTCardProps {
   tokenId: number;
@@ -20,21 +21,18 @@ interface NFTCardProps {
 const NFTCard: FC<NFTCardProps> = ({ tokenId }) => {
   const { contract } = useContract(nftDropSeason3, "nft-drop");
   const { data: nft } = useNFT(contract, tokenId);
+  const meta = nft ? fixNFTMetadata(nft.metadata) : undefined;
 
   return (
     <>
     
-      {nft && (
+      {meta && (
         <div>
-          {nft.metadata && (
-            
-            <ThirdwebNftMedia
-            metadata={nft.metadata}
+          <ThirdwebNftMedia
+            metadata={meta}
             className={styles.nftMediaSeason3}
             />
-            
-          )}
-          <h3>{nft.metadata.name}</h3>
+          <h3>{meta.name}</h3>
           
         </div>
       )}
