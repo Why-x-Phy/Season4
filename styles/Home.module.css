@@ -377,6 +377,30 @@
   background-size: cover;
 }
 
+.optionSelectBoxSeason4 {
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  width: 1200px;
+  min-height: 350px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  /*padding-left: 12px;
+  padding-right: 12px; */
+  cursor: pointer;
+  margin-bottom: 15px;
+  border: 1px solid rgba(46, 44, 44, 0.4);
+  /*box-shadow: 0 0 18px 0 #82919b;*/
+  flex-wrap: wrap;
+  background-image: url('/icons/season4.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
 .optionSelectBoxSeason3 {
   border-radius: 16px;
   border: 1px solid #ccc;

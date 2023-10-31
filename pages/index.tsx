@@ -41,6 +41,23 @@ const Home: NextPage = () => {
 
         <div className={styles.season}>
         <div
+          className={styles.optionSelectBoxSeason4}
+          role="button"
+          onClick={() => router.push(`/season4`)}
+       
+        >
+          {/* Staking an NFT */}
+          
+          <div className={styles.placeholder}><h2 className={styles.selectBoxTitleLeft}>
+          <p>GALACTIC</p>
+            GUARDIANS
+            </h2>
+          <p className={styles.selectBoxDescriptionleft}>
+          <b>Season 4</b>
+          </p></div>
+        </div>
+
+        <div
           className={styles.optionSelectBoxSeason3}
           role="button"
           onClick={() => router.push(`/season3`)}
