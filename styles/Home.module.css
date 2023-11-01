@@ -652,6 +652,12 @@
     min-height: 300px;
   }
 
+  .optionSelectBoxSeason4 {
+    justify-content: center;
+    background-position: 35% 0;
+    min-height: 300px;
+  }
+
   .optionSelectBoxSeason2 {
     justify-content: center;
     background-position: 55% 0;
