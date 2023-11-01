@@ -15,7 +15,7 @@ import {
   Web3Button,
 } from "@thirdweb-dev/react";
 import { BigNumber, ethers } from "ethers";
-import NFTCard from "../components/NFTCardSeason3";
+import NFTCard from "../components/NFTCardSeason4";
 import {
   nftDropSeason4,
   stakingSeason4,
