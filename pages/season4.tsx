@@ -114,9 +114,9 @@ if (isLoading) {
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
         <p className={styles.explain}>
-         <b>Phase 1 Unreveal Mint</b> costs 1 NFT <b>4 USDT</b> and goes until August 31th.
+         <b>Phase 1 Unreveal Mint</b> costs 1 NFT <b>4 USDT</b> and goes until December 31th.
          <br /><br /> 
-         <b>Phase 2 Reveal Mint</b> costs 1 NFT <b>8 USDT</b> and runs until September 30th.
+         <b>Phase 2 Reveal Mint</b> costs 1 NFT <b>8 USDT</b> and runs until January 31th.
          
          <br /><br /> 
         </p>
