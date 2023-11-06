@@ -28,6 +28,17 @@ const Home: NextPage = () => {
   const router = useRouter();
   const [quantity, setQuantity] = useState(1);
 
+  
+  const [error, setError] = useState<string | null>(null);
+
+  const [isErrorPopupOpen, setIsErrorPopupOpen] = useState(false);
+
+  const closeErrorPopup = () => {
+    setIsErrorPopupOpen(false);
+  };
+
+
+
     const address = useAddress();
     const { contract: nftDropContract } = useContract(
       nftDropSeason4,
@@ -147,21 +158,43 @@ if (isLoading) {
   
                     
   
-        <Web3Button
-          className={styles.wallet}
-          contractAddress={nftDropSeason4}
-          action={(contract) => contract.erc721.claim(quantity)}
-          onSuccess={() => {
-            setQuantity(1);
-            
-          }}
-          onError={(error) => {
-            //alert(error);
-            alert("Please Check Balance");
-          }}
-        >
-          Mint An NFT
-        </Web3Button>
+                    <Web3Button
+  className={styles.wallet}
+  contractAddress={nftDropSeason4}
+  action={(contract) => contract.erc721.claim(quantity)}
+  onSuccess={() => {
+    setQuantity(1);
+  }}
+  onError={(error) => {
+    let errorMessage = error.toString(); // Konvertieren Sie den Fehler in eine Zeichenkette
+
+    // Verwenden Sie Regex, um den Teil des Fehlerstrings zwischen den Trennzeichen zu extrahieren
+    const regex = /╚═══════════════════╝(.*?)╔═════════════════════════╗/s;
+    const match = errorMessage.match(regex);
+    if (match) {
+      errorMessage = match[1].trim();
+    } else {
+      errorMessage = "Unbekannter Fehler"; // Fallback, wenn der Text nicht gefunden wurde
+    }
+
+    setError(errorMessage);
+    setIsErrorPopupOpen(true);
+  }}
+>
+  Mint An NFT
+</Web3Button>
+
+{/* Popup für Fehlermeldung */}
+{isErrorPopupOpen && (
+  <div className={styles.poperror}>
+    <div className="popup-content">
+      <h2>Mint Failed</h2>
+      <h3>{error}</h3>
+      <button className={styles.close} onClick={closeErrorPopup}>Close</button>
+    </div>
+  </div>
+)}
+        
         <br /><br /> 
         </p>
 

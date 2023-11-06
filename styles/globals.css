@@ -52,6 +52,13 @@ h2 {
   /*text-shadow: rgb(49, 49, 49) 0.05em 0.05em 0.05em;*/
 }
 
+h3 {
+  font-family: 'Questrial' !important;
+  font-size: 1.5rem;
+  color: #f3f0f3;
+  /*text-shadow: rgb(49, 49, 49) 0.05em 0.05em 0.05em;*/
+}
+
 h4 {
   color: #f3f0f3;
   text-shadow: rgb(49, 49, 49) 0.05em 0.05em 0.05em;
