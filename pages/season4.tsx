@@ -156,7 +156,8 @@ if (isLoading) {
             
           }}
           onError={(error) => {
-            
+            //alert(error);
+            alert("Please Check Balance");
           }}
         >
           Mint An NFT
