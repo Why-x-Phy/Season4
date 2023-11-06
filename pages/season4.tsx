@@ -20,6 +20,7 @@ import {
   nftDropSeason4,
   stakingSeason4,
   tokenContractAddress,
+  tokenContractAddress1,
 } from "../consts/contractAddresses";
 import { fixNFTMetadata } from "../utils/fixNFTMetadata";
 
@@ -50,7 +51,9 @@ const Home: NextPage = () => {
     );
     const { contract, isLoading } = useContract(stakingSeason4);
     const { data: ownedNfts } = useOwnedNFTs(nftDropContract, address);
+    const { contract: tokenContract1 } = useContract(tokenContractAddress1, "token");
     const { data: tokenBalance } = useTokenBalance(tokenContract, address);
+    const { data: tokenBalance1 } = useTokenBalance(tokenContract1, address);
     const [claimableRewards, setClaimableRewards] = useState<BigNumber>();
     const { data: stakedTokens } = useContractRead(contract, "getStakeInfo", [
       address,
@@ -133,7 +136,12 @@ if (isLoading) {
         </p>
         <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
   
-  
+        <div className={styles.tokenItem}>
+              <h3 className={styles.tokenLabel}>Current USDT Balance</h3>
+              <p className={styles.tokenValue}>
+                <b>{tokenBalance1?.displayValue !== undefined ? parseFloat(tokenBalance1.displayValue).toFixed(2) : ""}</b> {tokenBalance1?.symbol}
+              </p>
+            </div>
         
   
         <div className={styles.quantityContainer}>

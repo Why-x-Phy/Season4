@@ -75,7 +75,6 @@
   justify-content: center;
   padding-left: 12px;
   padding-right: 12px;
-  cursor: pointer;
   margin-bottom: 40px;
   margin-top: 40px;
   border: 1px solid rgba(46, 44, 44, 0.1);
@@ -100,7 +99,7 @@
   margin-top: 10px;
   border: 1px solid rgba(46, 44, 44, 0.1);
   /*box-shadow: 0 0 18px 0 #4693FF; */
-  box-shadow: 0 0 9px 0 #82919b; 
+  box-shadow: 0 0 6px 0 #82919b; 
   background-image: url('/icons/wallet.png') !important;
   color: #f3f0f3;
 }

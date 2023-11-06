@@ -28,6 +28,14 @@ const Home: NextPage = () => {
   const router = useRouter();
   const [quantity, setQuantity] = useState(1);
 
+  const [error, setError] = useState<string | null>(null);
+
+  const [isErrorPopupOpen, setIsErrorPopupOpen] = useState(false);
+
+  const closeErrorPopup = () => {
+    setIsErrorPopupOpen(false);
+  };
+
   const address = useAddress();
   const { contract: nftDropContract } = useContract(nftDropNode, "nft-drop");
   const { contract: tokenContract } = useContract(tokenContractAddress, "token");
@@ -157,11 +165,39 @@ const Home: NextPage = () => {
             setQuantity(1);
           }}
           onError={(error) => {
-            // Handle error
+            let errorMessage = error.toString(); // Konvertieren Sie den Fehler in eine Zeichenkette
+        
+            // Überprüfen, ob die Fehlermeldung "Reason: !Qty" enthält und ersetzen Sie sie durch die gewünschte Nachricht
+            if (errorMessage.includes("Reason: !Qty")) {
+              errorMessage = "Maximum Genesis Edition achieved this Season";
+            } else {
+              // Verwenden Sie Regex, um den Teil des Fehlerstrings zwischen den Trennzeichen zu extrahieren
+              const regex = /╚═══════════════════╝(.*?)╔═════════════════════════╗/s;
+              const match = errorMessage.match(regex);
+              if (match) {
+                errorMessage = match[1].trim();
+              } else {
+                errorMessage = "Unbekannter Fehler"; // Fallback, wenn der Text nicht gefunden wurde
+              }
+            }
+        
+            setError(errorMessage);
+            setIsErrorPopupOpen(true);
           }}
         >
           Buy Genesis Edition
         </Web3Button>
+        
+        {/* Popup für Fehlermeldung */}
+        {isErrorPopupOpen && (
+          <div className={styles.poperror}>
+            <div className="popup-content">
+              <h2>Mint Failed</h2>
+              <h3>{error}</h3>
+              <button className={styles.close} onClick={closeErrorPopup}>Close</button>
+            </div>
+          </div>
+        )}
         <br />
         <br />
       </p>
