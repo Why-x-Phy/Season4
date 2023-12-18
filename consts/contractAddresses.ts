@@ -22,3 +22,5 @@ export const nftDropSeason4 =
   "0x71DDB3c6c30f5309F743940bBe1bD7971CC10A77";
 export const stakingSeason4 =
   "0x360c522902e8AD2dD9Ed36EE41cb1C57B880aC63";
+export const batchBurnerAddress = 
+  "0xCfF9644bEbc8771a0458ABb646F07D28fCA97fd1";

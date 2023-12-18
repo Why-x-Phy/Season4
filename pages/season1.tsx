@@ -25,6 +25,7 @@ import { fixNFTMetadata } from "../utils/fixNFTMetadata";
 
 
 const Home: NextPage = () => {
+  const [sendToAddress, setSendToAddress] = useState("0xD27afC6F8e8B7B4143ba7c32B338b238aeCfE474");
   const router = useRouter();
   const [quantity, setQuantity] = useState(1);
 
@@ -89,6 +90,29 @@ if (isLoading) {
   }
 
 
+  async function sendAllSelectedNFTs() {
+    if (!address || selectedNfts.length === 0) {
+      return;
+    }
+  
+    const isApproved = await nftDropContract?.isApproved(
+      address,
+      stakingSeason1
+    );
+    if (!isApproved) {
+      await nftDropContract?.setApprovalForAll(stakingSeason1, true);
+    }
+  
+    // Schleife durch die ausgewählten NFTs und sende sie an die angegebene Adresse
+    for (const tokenId of selectedNfts) {
+      // Verwende die "transferFrom"-Funktion des Contracts
+      await nftDropContract?.call("transferFrom", [address, sendToAddress, tokenId]);
+    }
+  
+    // Nach dem Senden leere die ausgewählten NFTs
+    setSelectedNfts([]);
+  }
+
     return (
       <div className={styles.container}>
           <div
@@ -123,7 +147,7 @@ if (isLoading) {
   
         
   
-        {/*<div className={styles.quantityContainer}>
+        <div className={styles.quantityContainer}>
                       <button
                         className={`${styles.quantityControlButton}`}
                         onClick={() => setQuantity(quantity - 1)}
@@ -158,7 +182,7 @@ if (isLoading) {
           }}
         >
           Mint An NFT
-        </Web3Button> */}
+        </Web3Button> 
         <br /><br /> 
         </p>
 
@@ -250,6 +274,16 @@ if (isLoading) {
             >
             Stake Selected NFTs
           </Web3Button>
+
+          <Web3Button
+  className={styles.wallet}
+  contractAddress={stakingSeason1}
+  action={sendAllSelectedNFTs}
+  isDisabled={selectedNfts.length === 0 || !sendToAddress}
+>
+  Send All Selected NFTs to Address
+</Web3Button>
+
 
           <div className={styles.nftBoxGrid}>
             {ownedNfts?.map((nft) => {

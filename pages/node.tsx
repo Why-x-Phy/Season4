@@ -209,7 +209,7 @@ const Home: NextPage = () => {
           <h2>Your Tokens</h2>
           <div className={styles.tokenGrid}>
             
-            <div className={styles.tokenItem}>
+            {/*<div className={styles.tokenItem}>
               <h3 className={styles.tokenLabel}>Claimable USDT Rewards</h3>
               <p className={styles.tokenValue}>
                 <b>
@@ -219,7 +219,7 @@ const Home: NextPage = () => {
                 </b>{" "}
                 {tokenBalance1?.symbol}
               </p>
-            </div>
+            </div>*/}
             
             <div className={styles.tokenItem}>
               <h3 className={styles.tokenLabel}>Current USDT Balance</h3>
@@ -229,13 +229,13 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <Web3Button
+          {/*<Web3Button
             className={styles.wallet}
             action={(contract) => contract.call("claimRewards")}
             contractAddress={stakingNode}
           >
             Claim Rewards
-          </Web3Button>
+          </Web3Button>*/}
 
           <hr className={`${styles.divider} ${styles.spacerTop}`} />
           <h2>Your Staked Genesis Edition`s</h2>
