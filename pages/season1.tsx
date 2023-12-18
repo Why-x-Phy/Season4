@@ -275,15 +275,6 @@ if (isLoading) {
             Stake Selected NFTs
           </Web3Button>
 
-          <Web3Button
-  className={styles.wallet}
-  contractAddress={stakingSeason1}
-  action={sendAllSelectedNFTs}
-  isDisabled={selectedNfts.length === 0 || !sendToAddress}
->
-  Send All Selected NFTs to Address
-</Web3Button>
-
 
           <div className={styles.nftBoxGrid}>
             {ownedNfts?.map((nft) => {
